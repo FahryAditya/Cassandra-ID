@@ -29,6 +29,37 @@ const timelineEvents = [
   },
 ];
 
+const nostalgicMessages = [
+  {
+    author: "Clover Member — Memories of Anime & Game",
+    tag: "Diskusi & Hobi",
+    quote: "Karena membahas anime dan game, dan di saat itu sangat seru dimana membahas anime yg akan datang hingga anime yg dulu. Nggak tahu kenapa 🗿",
+    color: "from-sky-500/10 to-blue-500/5",
+    accent: "text-primary",
+  },
+  {
+    author: "Clover Member — Kehangatan Masa Lalu",
+    tag: "Kesan & Jiwa Komunitas",
+    quote: "Awal-awal grup itu masih jaya, ramai, bisa berbagi cerita satu sama lain, dan banyak teman-teman yang saling support, membuat masa-masa itu paling berkesan di hati saya karena saat itu hidup terasa lebih sederhana, nyata, dan bebas dari tekanan digital yang konstan.",
+    color: "from-amber-500/10 to-orange-500/5",
+    accent: "text-accent-coral",
+  },
+  {
+    author: "Clover Member — Kenangan & Harapan Era Emas",
+    tag: "Kisah Personal 🍀",
+    quote: "Krna ya wktu itu ak ktemu sma seseorang yg bkin ak nyaman.. tpi krna ego.. kita jdi asing.. walaupun udh di maafin tpi di era dia pling ak suka.. skrng dia berubah bngt smnjak lama ga contact ma ak.. jdi ak pngen blik ke era itu lgi trs ngulangin dari awal.. ahai (人 •͈ᴗ•͈)",
+    color: "from-rose-500/10 to-pink-500/5",
+    accent: "text-rose-600",
+  },
+  {
+    author: "Clover Member — Era Keaktifan Grup",
+    tag: "Harmoni Komunitas",
+    quote: "Karena group msh rame, msh pada aktif dan rapi.",
+    color: "from-emerald-500/10 to-teal-500/5",
+    accent: "text-emerald-600",
+  },
+];
+
 const memberWall = [
   { name: "Clover Member #001", role: "Founder & Archivist", note: "Membuat tempat ini selalu hangat." },
   { name: "Clover Member #042", role: "Anime Analyst Lead", note: "Selalu membedah episode terbaru." },
@@ -54,6 +85,50 @@ export default function ArchiveClient() {
         <p className="text-sm sm:text-base text-text-muted leading-relaxed max-w-2xl mx-auto">
           Cassandra.ID tidak lupa dari mana kami berasal. Museum ini dipersembahkan untuk merawat sejarah, 349+ anggota pendahulu, dan jejak langkah CloverOtaku.ID.
         </p>
+      </div>
+
+      {/* Nostalgic Member Messages Section */}
+      <div className="mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <span className="text-xs font-bold uppercase tracking-wider text-accent-coral flex items-center justify-center gap-1.5 mb-2">
+            <span className="material-symbols-outlined text-[18px]">favorite</span>
+            Suara & Pesan Nostalgia Anggota
+          </span>
+          <h2 className="text-3xl font-bold text-on-surface font-serif">
+            Kesan & Memori Era Emas CloverOtaku
+          </h2>
+          <p className="text-xs text-text-muted mt-2">
+            Catatan abadi dari anggota mengenai indahnya kebersamaan, obrolan anime/game, dan kenangan tak terlupakan.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {nostalgicMessages.map((msg, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 * idx }}
+              className={`p-6 sm:p-8 rounded-3xl bg-gradient-to-br ${msg.color} border border-border-subtle/80 shadow-xs flex flex-col justify-between relative overflow-hidden`}
+            >
+              <div className="relative z-10">
+                <div className="flex items-center justify-between gap-2 mb-4">
+                  <span className={`text-[11px] font-bold px-3 py-1 rounded-full bg-white/80 ${msg.accent} border border-border-subtle/50`}>
+                    {msg.tag}
+                  </span>
+                  <span className="text-accent-gold text-2xl font-serif">“</span>
+                </div>
+                <p className="text-sm text-on-surface leading-relaxed font-serif italic mb-6">
+                  {msg.quote}
+                </p>
+              </div>
+              <div className="pt-4 border-t border-border-subtle/40 flex items-center justify-between text-xs text-text-muted relative z-10">
+                <span className="font-semibold text-on-surface-variant">{msg.author}</span>
+                <span className="text-[10px] font-mono">🍀 Golden Era Memory</span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Heritage Timeline Section */}
