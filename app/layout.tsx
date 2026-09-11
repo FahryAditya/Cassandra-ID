@@ -95,6 +95,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cassandra.id",
   },
+  verification: {
+    google: "googleae0726c51150f2d4",
+  },
 };
 
 export default function RootLayout({
@@ -124,6 +127,8 @@ export default function RootLayout({
       className={`${jakarta.variable} ${sourceSerif.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
