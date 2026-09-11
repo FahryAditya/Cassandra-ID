@@ -1,12 +1,13 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://cassandra-id.vercel.app";
   return {
     rules: {
       userAgent: "*",
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://cassandra.id/sitemap.xml",
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }

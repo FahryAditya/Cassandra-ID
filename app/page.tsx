@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
     description: "Where Anime Passion Meets Rigorous Research & Creative Innovation.",
-    url: "https://cassandra.id",
+    url: "/",
     siteName: "Cassandra.ID",
     type: "website",
   },
   alternates: {
-    canonical: "https://cassandra.id",
+    canonical: "/",
   },
 };
 

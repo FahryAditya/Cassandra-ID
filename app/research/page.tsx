@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Research Hub & Makalah Ilmiah — Cassandra.ID",
     description: "Publikasi Makalah & Catatan Penelitian Akademik Komunitas.",
-    url: "https://cassandra.id/research",
+    url: "/research",
   },
   alternates: {
-    canonical: "https://cassandra.id/research",
+    canonical: "/research",
   },
 };
 

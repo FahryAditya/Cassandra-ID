@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Knowledge Base & Dokumentasi — Cassandra.ID",
     description: "Pusat Pengetahuan & Dokumentasi Permanen Komunitas.",
-    url: "https://cassandra.id/knowledge",
+    url: "/knowledge",
   },
   alternates: {
-    canonical: "https://cassandra.id/knowledge",
+    canonical: "/knowledge",
   },
 };
 

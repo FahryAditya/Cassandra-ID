@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Innovation Lab & Proyek Open-Source — Cassandra.ID",
     description: "Pameran Proyek & Eksperimen Kode Komunitas.",
-    url: "https://cassandra.id/innovation",
+    url: "/innovation",
   },
   alternates: {
-    canonical: "https://cassandra.id/innovation",
+    canonical: "/innovation",
   },
 };
 

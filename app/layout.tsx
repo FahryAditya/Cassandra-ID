@@ -25,8 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://cassandra-id.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cassandra.id"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
     template: "%s | Cassandra.ID",
@@ -61,13 +63,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
     description: "Where Anime Passion Meets Rigorous Research & Creative Innovation.",
-    url: "https://cassandra.id",
+    url: SITE_URL,
     siteName: "Cassandra.ID",
     locale: "id_ID",
     type: "website",
     images: [
       {
-        url: "https://cassandra.id/logo.png",
+        url: `${SITE_URL}/logo.png`,
         width: 800,
         height: 800,
         alt: "Cassandra.ID Logo",
@@ -79,7 +81,7 @@ export const metadata: Metadata = {
     title: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
     description: "Where Anime Passion Meets Rigorous Research & Creative Innovation.",
     creator: "@CassandraID",
-    images: ["https://cassandra.id/logo.png"],
+    images: [`${SITE_URL}/logo.png`],
   },
   robots: {
     index: true,
@@ -93,7 +95,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://cassandra.id",
+    canonical: SITE_URL,
   },
   verification: {
     google: "googleae0726c51150f2d4",
@@ -109,14 +111,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Cassandra.ID",
-    url: "https://cassandra.id",
+    url: SITE_URL,
     description: "Official portal and living archive documenting ideas, research papers, technology experiments, and community discussions.",
     publisher: {
       "@type": "Organization",
       name: "Cassandra.ID Community",
       logo: {
         "@type": "ImageObject",
-        url: "https://cassandra.id/logo.png",
+        url: `${SITE_URL}/logo.png`,
       },
     },
   };

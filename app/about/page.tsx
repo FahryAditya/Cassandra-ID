@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tentang Cassandra.ID — Visi & Filosofi Komunitas",
     description: "Dari Fandom Anime Menuju Ruang Inovasi & Riset Terbuka.",
-    url: "https://cassandra.id/about",
+    url: "/about",
   },
   alternates: {
-    canonical: "https://cassandra.id/about",
+    canonical: "/about",
   },
 };
 

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CloverOtaku.ID Museum & Archive — Cassandra.ID",
     description: "Menjaga Warisan & Kenangan 349+ Anggota Pendahulu Komunitas.",
-    url: "https://cassandra.id/archive",
+    url: "/archive",
   },
   alternates: {
-    canonical: "https://cassandra.id/archive",
+    canonical: "/archive",
   },
 };
 

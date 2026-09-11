@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Komunitas & Forum Diskusi — Cassandra.ID",
     description: "Ruang Diskusi & Kolaborasi Interaktif Real-Time Komunitas Cassandra.ID.",
-    url: "https://cassandra.id/community",
+    url: "/community",
   },
   alternates: {
-    canonical: "https://cassandra.id/community",
+    canonical: "/community",
   },
 };
 
