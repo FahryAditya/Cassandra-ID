@@ -56,8 +56,11 @@ export default function Footer() {
             <Link href="/about" className="text-xs text-text-muted hover:text-primary transition-colors">
               Community Vision & Manifesto
             </Link>
-            <a href="https://chat.whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-primary transition-colors">
+            <a href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-primary transition-colors">
               WhatsApp Community Group
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vb7vIyCH5JM2HKbvjH0v" target="_blank" rel="noopener noreferrer" className="text-xs text-text-muted hover:text-emerald-600 transition-colors flex items-center gap-1">
+              <span>Saluran WhatsApp Resmi</span>
             </a>
           </div>
 
@@ -68,10 +71,10 @@ export default function Footer() {
               <a href="#" aria-label="GitHub" className="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors">
                 <span className="material-symbols-outlined text-[18px]">code</span>
               </a>
-              <a href="#" aria-label="Discord" className="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors">
-                <span className="material-symbols-outlined text-[18px]">groups</span>
+              <a href="https://whatsapp.com/channel/0029Vb7vIyCH5JM2HKbvjH0v" target="_blank" rel="noopener noreferrer" aria-label="Saluran WhatsApp" className="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-emerald-600 hover:bg-surface-container-low transition-colors" title="Saluran WhatsApp">
+                <span className="material-symbols-outlined text-[18px]">campaign</span>
               </a>
-              <a href="https://chat.whatsapp.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors">
+              <a href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Group" className="w-8 h-8 rounded-full bg-surface-subtle flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" title="Grup WhatsApp">
                 <span className="material-symbols-outlined text-[18px]">chat</span>
               </a>
             </div>

@@ -79,15 +79,26 @@ export default function CommunityClient() {
             WhatsApp adalah tempat jantung komunitas kami berdetak. Berdiskusi secara bebas, membagikan referensi, dan berkolaborasi secara langsung.
           </p>
         </div>
-        <a
-          href="https://chat.whatsapp.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-white text-emerald-700 font-bold text-sm shadow-md hover:bg-slate-50 transition-transform active:scale-95 shrink-0"
-        >
-          <span className="material-symbols-outlined text-[20px]">group_add</span>
-          <span>Masuk WhatsApp Group</span>
-        </a>
+        <div className="flex flex-wrap items-center gap-4 shrink-0">
+          <a
+            href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-emerald-700 font-bold text-sm shadow-md hover:bg-slate-50 transition-transform active:scale-95"
+          >
+            <span className="material-symbols-outlined text-[20px]">group_add</span>
+            <span>Masuk WhatsApp Group</span>
+          </a>
+          <a
+            href="https://whatsapp.com/channel/0029Vb7vIyCH5JM2HKbvjH0v"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white/20 text-white font-bold text-sm border border-white/30 hover:bg-white/30 transition-transform active:scale-95"
+          >
+            <span className="material-symbols-outlined text-[20px]">campaign</span>
+            <span>Ikuti Saluran Resmi</span>
+          </a>
+        </div>
       </div>
 
       {/* Discussion Categories */}

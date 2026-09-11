@@ -85,7 +85,7 @@ export default function Navbar() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://chat.whatsapp.com"
+              href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 h-10 px-5 rounded-full bg-primary-container text-white text-xs font-semibold shadow-[0_4px_14px_-2px_rgba(94,193,232,0.45)] hover:bg-[#4AB3DC] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150"

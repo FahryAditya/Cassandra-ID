@@ -107,7 +107,7 @@ export default function HomeClient() {
             className="flex flex-wrap items-center justify-center gap-4 w-full mb-14"
           >
             <a
-              href="https://chat.whatsapp.com"
+              href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2.5 h-12 px-7 rounded-full bg-primary-container text-white font-semibold text-sm shadow-md hover:bg-[#4AB3DC] hover:-translate-y-0.5 transition-all duration-150"

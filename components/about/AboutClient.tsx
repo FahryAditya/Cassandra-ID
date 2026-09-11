@@ -141,7 +141,7 @@ export default function AboutClient() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href="https://chat.whatsapp.com"
+            href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-full bg-white text-primary font-bold text-xs shadow-sm hover:bg-surface-subtle transition-colors"

@@ -123,7 +123,7 @@ export default function InnovationClient() {
           Kami mendukung penuh setiap inisiatif anggota. Publikasikan proyek Anda di Innovation Lab Cassandra.ID untuk mendapatkan kolaborator dan masukan teknis.
         </p>
         <a
-          href="https://chat.whatsapp.com"
+          href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 px-6 py-3 rounded-full bg-primary text-white text-xs font-bold shadow-md hover:bg-primary-container transition-colors"
