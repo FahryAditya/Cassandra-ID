@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-subtle":"#E2E8F0","accent-gold":"#F2B705","tertiary":"#8a5020","surface-dim":"#ccdcee","inverse-surface":"#233240","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc5","inverse-on-surface":"#e8f2ff","background":"#f7f9ff","on-primary-container":"#004d63","accent-peach":"#FFB37A","on-primary-fixed-variant":"#004d63","on-secondary-container":"#671100","primary-fixed-dim":"#71d2fa","surface-bright":"#f7f9ff","accent-coral":"#E85D3D","surface-container-highest":"#d4e4f7","on-secondary-fixed":"#3d0600","primary-container":"#5ec1e8","inverse-primary":"#71d2fa","primary-fixed":"#bce9ff","primary":"#006783","error":"#ba1a1a","tertiary-container":"#efa56d","surface-pure":"#FFFFFF","on-error-container":"#93000a","on-tertiary-fixed-variant":"#6d3909","surface":"#f7f9ff","secondary":"#ad3317","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","outline":"#6e797e","surface-container-high":"#daeafd","surface-tint":"#006783","on-surface":"#0d1d2a","on-primary":"#ffffff","error-container":"#ffdad6","surface-variant":"#d4e4f7","secondary-fixed-dim":"#ffb4a3","on-tertiary-fixed":"#301400","on-surface-variant":"#3e484d","secondary-container":"#ff6e4c","on-error":"#ffffff","on-tertiary-container":"#6d390a","on-background":"#0d1d2a","on-primary-fixed":"#001f2a","text-muted":"#6B7C93","outline-variant":"#bec8ce","surface-container-low":"#edf4ff","tertiary-fixed-dim":"#ffb781","on-secondary-fixed-variant":"#8b1a00","surface-subtle":"#F8FAFC","secondary-fixed":"#ffdad2","surface-container":"#e3efff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","space-md":"1rem"},fontFamily:{"code-sm":["JetBrains Mono"],"headline-md":["\"Source Serif 4\""],"headline-lg":["\"Source Serif 4\""],"display-hero-mobile":["\"Source Serif 4\""],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["\"Source Serif 4\""],"quote-editorial":["\"Source Serif 4\""],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"display-hero":["\"Source Serif 4\""]},fontSize:{"code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],"quote-editorial":["20px",{lineHeight:"32px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"metric-display":["36px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}}</script></head><body class="bg-surface-pure font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-pure/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,42,56,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Cassandra.ID Logo" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(94,193,232,0.25)] ring-2 ring-primary-container/30 transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none font-bold">CASSANDRA<span class="text-primary-container">.ID</span></span><span class="font-label-sm text-label-sm tracking-wider text-text-muted mt-0.5">Anime · Research · Innovation</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-subtle/80 rounded-full" data-active-classes="bg-surface-container text-primary font-bold shadow-sm rounded-full"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="about" href="#">About</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="community" href="#">Community</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="research" href="#">Research</a><a aria-current="page" class="px-space-md py-space-xs transition-all duration-150 bg-surface-container text-primary font-bold shadow-sm rounded-full" data-path="innovation" href="#">Innovation</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="knowledge" href="#">Knowledge</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150 inline-flex items-center gap-1.5" data-path="archive" href="#">Archive 🍀</a></nav></div><div class="flex items-center gap-space-sm"><button aria-label="Search portal" class="hidden sm:flex items-center gap-space-sm px-space-md py-2 h-10 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm hidden md:inline">Search knowledge...</span><kbd class="hidden lg:inline-block font-code-sm text-code-sm bg-surface-pure px-1.5 py-0.5 rounded text-text-muted shadow-sm">⌘K</kbd></button><a class="inline-flex items-center gap-space-xs h-10 px-space-lg rounded-full bg-primary-container text-on-secondary font-label-md text-label-md shadow-[0_4px_14px_-2px_rgba(94,193,232,0.45)] hover:bg-[#4AB3DC] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150" href="https://chat.whatsapp.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Join WhatsApp</span></a><button aria-label="Open menu" class="xl:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-subtle text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/20 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/></div></div></header><main class="w-full pt-20 bg-surface-pure"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Gradient Arc -->
+<div class="relative w-full overflow-hidden pb-12 pt-6">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[1100px] h-[480px] bg-gradient-to-b from-primary-container/15 via-accent-peach/10 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<!-- Breadcrumb & Overline -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-code-sm text-code-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            SYS.ENG // LAB-V3.4
+          </span>
+<span class="text-text-muted font-code-sm text-code-sm">/</span>
+<span class="text-text-muted font-body-sm text-body-sm font-medium">Experimental Incubator</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-surface-subtle px-3 py-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-accent-gold text-[18px]">neurology</span>
+<span class="font-code-sm text-code-sm text-on-surface font-semibold">12 Active Repos</span>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1.5 text-text-muted hover:text-primary font-label-sm text-label-sm transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Cassandra Git Org</span>
+</a>
+</div>
+</div>
+<!-- Main Headline Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14">
+<div class="lg:col-span-8 space-y-4">
+<div class="inline-flex items-center gap-2 text-accent-coral font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">science</span>
+<span>Computational Otaku Studies &amp; Open Systems</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight max-w-3xl">
+            Cassandra Innovation Lab
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            From theoretical discussions on WhatsApp to tangible open-source software, automated knowledge crawlers, and spatial memory experiments.
+          </p>
+</div>
+<!-- Metric Tile Accent -->
+<div class="lg:col-span-4 flex justify-start lg:justify-end">
+<div class="bg-surface-subtle p-6 rounded-xl shadow-sm w-full sm:w-auto min-w-[280px] relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-container/10 rounded-full blur-xl group-hover:scale-125 transition-transform duration-500"></div>
+<div class="flex items-center justify-between gap-4 mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Deployment Velocity</span>
+<span class="material-symbols-outlined text-accent-gold text-[20px]">bolt</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-metric-display font-bold text-on-surface">94.8%</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+18.2% Q2</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Direct pipeline from discourse to prototyped commit.</p>
+</div>
+</div>
+</div>
+<!-- Horizontal Pipeline Stepper -->
+<section aria-label="Development Pipeline" class="bg-surface-subtle p-6 lg:p-8 rounded-xl shadow-sm mb-16 relative overflow-hidden">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-accent-coral"></span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">Interactive Lifecycle Pipeline</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Community-voted hypotheses graduating systematically into verifiable code artifacts.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-pure px-3 py-1.5 rounded-full shadow-sm text-text-muted">
+<span class="material-symbols-outlined text-primary-container text-[18px]">sync_alt</span>
+<span class="font-code-sm text-code-sm font-medium">Filter View: All 4 Tiers</span>
+</div>
+</div>
+<!-- Pipeline Bar Graphic -->
+<div class="relative py-2">
+<!-- Continuous Track Behind -->
+<div class="hidden lg:block absolute top-7 left-12 right-12 h-1 bg-surface-container rounded-full -z-0">
+<div class="h-full bg-gradient-to-r from-primary-container via-accent-peach to-accent-coral rounded-full w-[82%]"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative z-10">
+<!-- Step 1: IDEA -->
+<div class="pipeline-step cursor-pointer bg-surface-pure p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="filterByPipeline('ALL')">
+<div class="flex items-center justify-between mb-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm font-bold shadow-sm">01</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-text-muted font-code-sm text-code-sm">18 Submissions</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">IDEA</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Peer review on forum threads &amp; chat polls.</p>
+<div class="mt-3 flex items-center gap-1.5 text-primary text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">forum</span>
+<span>Community Genesis</span>
+</div>
+</div>
+<!-- Step 2: RESEARCH -->
+<div class="pipeline-step cursor-pointer bg-surface-pure p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="filterByPipeline('RESEARCH')">
+<div class="flex items-center justify-between mb-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm font-bold shadow-sm">02</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-code-sm text-code-sm font-medium">3 Active</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">RESEARCH</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Mathematical modeling, datasets &amp; whitepapers.</p>
+<div class="mt-3 flex items-center gap-1.5 text-primary text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+<span>Ontology Drafts</span>
+</div>
+</div>
+<!-- Step 3: DEVELOPMENT -->
+<div class="pipeline-step cursor-pointer bg-surface-pure p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="filterByPipeline('DEVELOPMENT')">
+<div class="flex items-center justify-between mb-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary-container text-surface-pure font-code-sm text-code-sm font-bold shadow-sm">03</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-code-sm text-code-sm font-bold">4 Sprinting</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">DEVELOPMENT</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Core architectural MVP &amp; schema design.</p>
+<div class="mt-3 flex items-center gap-1.5 text-primary text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">terminal</span>
+<span>Feature Pulls</span>
+</div>
+</div>
+<!-- Step 4: TESTING -->
+<div class="pipeline-step cursor-pointer bg-surface-pure p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="filterByPipeline('TESTING')">
+<div class="flex items-center justify-between mb-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent-peach text-surface-pure font-code-sm text-code-sm font-bold shadow-sm">04</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-code-sm text-code-sm font-bold">2 Staging</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">TESTING</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Benchmark stress-runs &amp; beta tester cohort.</p>
+<div class="mt-3 flex items-center gap-1.5 text-accent-coral text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Audit &amp; QA</span>
+</div>
+</div>
+<!-- Step 5: RELEASED -->
+<div class="pipeline-step cursor-pointer bg-surface-pure p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-200" onclick="filterByPipeline('RELEASED')">
+<div class="flex items-center justify-between mb-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-accent-coral text-surface-pure font-code-sm text-code-sm font-bold shadow-sm">05</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-secondary font-code-sm text-code-sm font-bold">5 Production</span>
+</div>
+<p class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">RELEASED</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Live in daily community use across channels.</p>
+<div class="mt-3 flex items-center gap-1.5 text-accent-coral text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">rocket_launch</span>
+<span>Active &amp; Stable</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter / Control Sub-bar -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Initiatives &amp; Codebases</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Showing open software blueprints engineered for and by the collective.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="filter-btn active-filter px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold shadow-sm transition-all" onclick="filterCards('ALL', this)" type="button">All Projects (4)</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all" onclick="filterCards('RELEASED', this)" type="button">Released</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all" onclick="filterCards('DEVELOPMENT', this)" type="button">In Dev</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all" onclick="filterCards('TESTING', this)" type="button">Testing</button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all" onclick="filterCards('RESEARCH', this)" type="button">Research</button>
+</div>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-20" id="projects-grid">
+<!-- Card 1: Cassandra Bot -->
+<article class="project-card flex flex-col justify-between bg-surface-subtle p-7 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden" data-stage="RELEASED">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-2xl pointer-events-none -mr-8 -mt-8"></div>
+<div>
+<!-- Card Header: Title, Stage Badge, Star Glyph -->
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">smart_toy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Cassandra Bot</h4>
+<span class="text-accent-gold material-symbols-outlined text-[16px]">verified</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">v2.14.0 // build-prod-live</span>
+</div>
+</div>
+<!-- Status Pill -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container/15 text-secondary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-accent-coral animate-ping"></span>
+                RELEASED / ACTIVE
+              </span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Automated discussion summarizer, trivia engine, and moderation companion engineered to keep subculture discourse orderly, archival, and intellectually stimulating.
+            </p>
+<!-- Tech Pills Stack -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Node.js
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">WhatsApp Web API</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">OpenAI API</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-text-muted">PostgreSQL</span>
+</div>
+<!-- Progress Meter -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm mb-6">
+<div class="flex items-center justify-between text-on-surface mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted font-bold">Lifecycle Completion</span>
+<span class="font-code-sm text-code-sm font-bold text-primary">100% (Production Grade)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-accent-coral rounded-full w-full transition-all duration-700"></div>
+</div>
+</div>
+</div>
+<!-- Card Footer: Author + CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Close up photographic avatar of a visionary software engineer looking intently with soft studio rim light and subtle neon cerulean reflections in a clean academic workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAEpzpCpMWXlgj2-bs0mWZyG8CcI1KPuPme_ZPpVq4if7d0BwnhCUf3oeBn6OcS9d_QO2uePeFSt6hqZLVvWeib1ZSIXLF2-ph6CzCj97l6FFfrFeR3xd3QYCJg0clxoxuBpUZ49czmjTLzy_yORILNM4QSpwzLlg3D5P75kpjoIlyyQKqS1o-_VswQ3W-SkiQLcaG4Nj3TgvMGhzZDGS1e0-atKEUKUSx99kolffAxxO1zY_bQqGu4g"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Lead: @ryukami</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-none">Automations Taskforce</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-pure hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GitHub</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-primary-container hover:bg-[#4AB3DC] text-surface-pure font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Live Test</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: Anime Database & Semantic Index -->
+<article class="project-card flex flex-col justify-between bg-surface-subtle p-7 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden" data-stage="DEVELOPMENT">
+<div class="absolute top-0 right-0 w-32 h-32 bg-accent-peach/10 rounded-full blur-2xl pointer-events-none -mr-8 -mt-8"></div>
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-accent-peach/20 flex items-center justify-center text-accent-coral shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">dataset</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Anime Database &amp; Semantic Index</h4>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">v0.8.2-alpha // sprint-4</span>
+</div>
+</div>
+<!-- Status Pill -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                DEVELOPMENT
+              </span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Knowledge graph connecting 10+ years of community anime debates, niche categorization taxonomy, and multidimensional sentiment-rating metrics.
+            </p>
+<!-- Tech Pills Stack -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-peach"></span>Next.js 14
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">Vector DB (Pinecone)</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">Tailwind CSS</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-text-muted">GraphQL</span>
+</div>
+<!-- Progress Meter -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm mb-6">
+<div class="flex items-center justify-between text-on-surface mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted font-bold">Lifecycle Completion</span>
+<span class="font-code-sm text-code-sm font-bold text-primary">68% (Schema Finalized)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[68%] transition-all duration-700"></div>
+</div>
+</div>
+</div>
+<!-- Card Footer: Author + CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of a female data architect with stylish glasses against an ivory modern library backdrop with subtle golden autumn reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwzEc3SXWjOq7MUVDzKaoKHoGf6j9RBlyKTxdu03Bhys8BsETYkvE3KOVbi6EkrWvQoyY_ADStwDc1h2uS6XAFty_2whhF1gV_qDdu5zh_0U55tU_UBdX2LUrdpE2ZY5-HTcQB_s2xH4C7V5UxxRSWsAMzUkA4nPj-HROlXpSIt7aszpGfHT-Ee4l6je18i8E1UOANsVP5hEAH4Cb-_VCShD3ylzPAfMosQiH5bVjDrGEuadLAZYCZmg"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Lead: @haruka_arch</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-none">Ontology Squad</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-pure hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">data_object</span>
+<span>Schema Docs</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>Inspect Repo</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Clover Archive Digital Museum -->
+<article class="project-card flex flex-col justify-between bg-surface-subtle p-7 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden" data-stage="TESTING">
+<div class="absolute top-0 right-0 w-32 h-32 bg-accent-gold/10 rounded-full blur-2xl pointer-events-none -mr-8 -mt-8"></div>
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-accent-gold/20 flex items-center justify-center text-tertiary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">view_in_ar</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Clover Archive Digital Museum</h4>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary font-bold">🍀 349</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">v1.0.0-rc3 // beta-gate</span>
+</div>
+</div>
+<!-- Status Pill -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-accent-gold animate-bounce"></span>
+                TESTING
+              </span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Interactive 3D commemorative space paying tribute to CloverOtaku history, preserving forum transcripts, physical badges, and early milestone galleries in WebGL.
+            </p>
+<!-- Tech Pills Stack -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-gold"></span>Three.js
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">React Three Fiber</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">Tailwind CSS</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-text-muted">WebAudio API</span>
+</div>
+<!-- Progress Meter -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm mb-6">
+<div class="flex items-center justify-between text-on-surface mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted font-bold">Lifecycle Completion</span>
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">88% (User Acceptance Testing)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-accent-peach to-accent-gold rounded-full w-[88%] transition-all duration-700"></div>
+</div>
+</div>
+</div>
+<!-- Card Footer: Author + CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Artistic portrait of a 3D computational artist smiling warmly in front of an ambient illuminated screen displaying three-dimensional wireframes in sky blue and peach hues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhe8RqGFhKkdIEgaJMXhq4L5zcPWJg1ivYL3iYXg7a2zg_jAsbwOg234Vheu0sMfccZqzfxKn_saP4eioo1OS0Xb9mDKnhQG7ofkPPcmPdpqJe9xhSSc70Vp84i63pBerEfeVLzgvOzY7Cyxe6Wo1kcLSBreg7T8HaLa0cFH-XC5a1ASkhi8kkzwG3zuvC-N-uNIXkgxUYdgyJFIQRned2iPil4AQVc3pCZtjBbm4Shf9u4p9Zw8Hd8g"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Lead: @sora_clover</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-none">Archival Engineering</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-pure hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>GitHub</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-accent-coral hover:bg-secondary text-surface-pure font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">3d_rotation</span>
+<span>Enter 3D Demo</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4: AMV Frame Synthesizer -->
+<article class="project-card flex flex-col justify-between bg-surface-subtle p-7 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden" data-stage="RESEARCH">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-2xl pointer-events-none -mr-8 -mt-8"></div>
+<div>
+<!-- Card Header -->
+<div class="flex items-start justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">slow_motion_video</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">AMV Frame Synthesizer</h4>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">arXiv:2411.091 // exploratory</span>
+</div>
+</div>
+<!-- Status Pill -->
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                RESEARCH
+              </span>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Machine learning pipeline investigating neural frame interpolation tuned specifically for cel animation keyframes, line preservation, and rhythmic audio beat matching.
+            </p>
+<!-- Tech Pills Stack -->
+<div class="flex flex-wrap items-center gap-2 mb-6">
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Python 3.11
+              </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">PyTorch</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-on-surface font-semibold">CUDA</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-pure shadow-sm font-code-sm text-code-sm text-text-muted">FFmpeg-C++</span>
+</div>
+<!-- Progress Meter -->
+<div class="bg-surface-pure p-4 rounded-lg shadow-sm mb-6">
+<div class="flex items-center justify-between text-on-surface mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted font-bold">Lifecycle Completion</span>
+<span class="font-code-sm text-code-sm font-bold text-primary">34% (Loss Optimization)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-[34%] transition-all duration-700"></div>
+</div>
+</div>
+</div>
+<!-- Card Footer: Author + CTAs -->
+<div class="pt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-9 rounded-full object-cover shadow-sm" data-alt="Portrait of an AI vision researcher looking thoughtfully toward the camera in a modern minimalist laboratory room with subtle high-contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXxtIT5ImlLHN8lF35xL-EKqZvRcJCLOkamofun-dfWNffbp2RU0SGvOPI_Pqd51fPDg_g-SmbgRLxxMSn9_5UqBowVuyYZyv1PjoEtK589heogEGSq0XNjl5Ahl6S7k0JDZokett1d04JCJ1Mxhl9eIIJTK2IZRshwrodk5tiwJ3c8n04Qu2ZLAOBPU1SLT7kkiIZ3QYxooE0m_NGZVkaZVPEBGXPJQ7k29D9LbQ_XSgVS1bnZ7q1HQ"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Lead: @dr_kenji</p>
+<p class="font-body-sm text-body-sm text-text-muted leading-none">Visual Computation Lab</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-pure hover:bg-surface-container text-on-surface font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>Whitepaper</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">science</span>
+<span>View Notebook</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Lab Activity & Telemetry Bento Section -->
+<section class="mb-20 bg-surface-subtle p-8 rounded-xl shadow-sm relative overflow-hidden">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-accent-gold text-[20px]">insights</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Lab Telemetry &amp; Community Velocity</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Real-time compilation signals and collaborative commits across research clusters.</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-code-sm text-code-sm text-text-muted">Updated 4m ago</span>
+<button aria-label="Refresh telemetry" class="p-2 rounded-full bg-surface-pure hover:bg-surface-container text-on-surface transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Stat 1 -->
+<div class="bg-surface-pure p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Weekly Pull Requests</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">call_merge</span>
+</div>
+<p class="font-metric-display text-metric-display font-extrabold text-on-surface">142</p>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mt-2 font-semibold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+24% vs past fortnight</span>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-pure p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Indexed Discourses</span>
+<span class="material-symbols-outlined text-accent-peach text-[20px]">forum</span>
+</div>
+<p class="font-metric-display text-metric-display font-extrabold text-on-surface">18,940</p>
+<div class="flex items-center gap-1 text-text-muted font-body-sm text-body-sm mt-2">
+<span>Transcribed from WhatsApp</span>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-pure p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Bot Response Latency</span>
+<span class="material-symbols-outlined text-accent-gold text-[20px]">speed</span>
+</div>
+<p class="font-metric-display text-metric-display font-extrabold text-on-surface">240ms</p>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm mt-2 font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>99.98% uptime</span>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-pure p-5 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Active Contributors</span>
+<span class="material-symbols-outlined text-accent-coral text-[20px]">group</span>
+</div>
+<p class="font-metric-display text-metric-display font-extrabold text-on-surface">349</p>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm mt-2 font-semibold">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+<span>The 349 Collective</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Graph Vector Component -->
+<div class="mt-6 bg-surface-pure p-5 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-4">
+<span class="font-label-md text-label-md font-bold text-on-surface">Automated Synthesis &amp; Code Frequency (Last 14 Days)</span>
+<div class="flex items-center gap-4 text-text-muted font-code-sm text-code-sm">
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>Cassandra Bot API</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-accent-coral"></span>Museum 3D Assets</span>
+</div>
+</div>
+<div class="w-full h-24 sm:h-28">
+<svg class="w-full h-full text-primary-container overflow-visible" preserveaspectratio="none" viewbox="0 0 800 100">
+<!-- Grid hairline guides -->
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.08" x1="0" x2="800" y1="20" y2="20"></line>
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.08" x1="0" x2="800" y1="50" y2="50"></line>
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.08" x1="0" x2="800" y1="80" y2="80"></line>
+<!-- Stream 1 (Sky Blue) -->
+<path d="M0,80 C60,70 120,40 180,45 C240,50 300,20 360,28 C420,35 480,15 540,22 C600,30 660,10 720,15 C760,18 780,5 800,8 L800,100 L0,100 Z" fill="currentColor" fill-opacity="0.12"></path>
+<path d="M0,80 C60,70 120,40 180,45 C240,50 300,20 360,28 C420,35 480,15 540,22 C600,30 660,10 720,15 C760,18 780,5 800,8" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Stream 2 (Warm Coral Accent) -->
+<path d="M0,90 C70,85 140,75 210,65 C280,55 350,70 420,50 C490,30 560,45 630,35 C700,25 750,40 800,30" fill="none" stroke="#E85D3D" stroke-dasharray="3 3" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</section>
+<!-- Bottom Collaborative Callout Banner -->
+<section class="mb-16 bg-surface-subtle p-8 sm:p-10 rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden">
+<div class="space-y-2 max-w-xl text-center md:text-left">
+<div class="inline-flex items-center gap-2 text-accent-gold font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[18px]">build_circle</span>
+<span>Have a Prototype or Hypothesis?</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Propose an Experiment to the Lab</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            The Cassandra Foundation offers compute subsidies, vector database clusters, and an eager collective of peer reviewers for projects aligning with otaku scholarship.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-container text-surface-pure hover:bg-[#4AB3DC] font-label-md text-label-md font-semibold shadow-md transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Submit Proposal RFC</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-surface-pure text-on-surface hover:bg-surface-container font-label-md text-label-md font-semibold shadow-sm transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">help</span>
+<span>Lab Grant FAQs</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  function filterCards(stage, btnElement) {
+    const cards = document.querySelectorAll('.project-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-surface-container', 'text-primary', 'shadow-sm', 'font-bold');
+      btn.classList.add('bg-surface-subtle', 'text-text-muted');
+    });
+
+    btnElement.classList.add('bg-surface-container', 'text-primary', 'shadow-sm', 'font-bold');
+    btnElement.classList.remove('bg-surface-subtle', 'text-text-muted');
+
+    cards.forEach(card => {
+      const cardStage = card.getAttribute('data-stage');
+      if (stage === 'ALL' || cardStage === stage) {
+        card.style.display = 'flex';
+        card.classList.add('animate-fadeIn');
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function filterByPipeline(stage) {
+    const targetButton = Array.from(document.querySelectorAll('.filter-btn')).find(b => {
+      if (stage === 'ALL') return b.innerText.includes('All');
+      return b.innerText.toUpperCase().includes(stage);
+    });
+    if (targetButton) {
+      filterCards(stage, targetButton);
+    }
+  }
+</script></main><footer class="w-full bg-surface-subtle pt-space-xl pb-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col items-start pr-0 lg:pr-space-lg"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Cassandra Emblem" class="w-9 h-9 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">CASSANDRA<span class="text-primary-container">.ID</span></span></div><p class="font-quote-editorial text-quote-editorial italic text-on-surface-variant mb-space-md">Community → Knowledge → Innovation</p><p class="font-body-sm text-body-sm text-text-muted leading-relaxed max-w-sm mb-space-md">An open scientific sanctuary bridging scholarly anime archiving, otaku subculture ontology, and collaborative computational innovation.</p><div class="flex items-center gap-2 text-accent-gold"><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span><span class="material-symbols-outlined text-[16px]">star</span></div></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Ecosystem</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="home" href="#">Home</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="about" href="#">About</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="community" href="#">Community Forum</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Knowledge &amp; Lab</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="research" href="#">Research Hub</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="innovation" href="#">Innovation Lab</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="knowledge" href="#">Knowledge Base</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Heritage</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="cloverotaku-museum" href="#">CloverOtaku Museum</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="the-349" href="#">The 349</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="memory-wall" href="#">Memory Wall</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Social &amp; Hubs</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">forum</span><a class="text-text-muted hover:text-primary transition-colors" href="#">WhatsApp Group</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">groups</span><a class="text-text-muted hover:text-primary transition-colors" href="#">Discord Guild</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">terminal</span><a class="text-text-muted hover:text-primary transition-colors" href="#">GitHub Commons</a></li></ul></div></div><div class="w-full flex items-center justify-center gap-space-md py-space-sm"><span class="h-[1px] flex-1 bg-accent-gold/40"></span><span class="material-symbols-outlined text-accent-gold text-[16px]">star_rate</span><span class="h-[1px] flex-1 bg-accent-gold/40"></span></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><p>© 2025 Cassandra.ID Foundation. All rights reserved. Archival preservation for anime &amp; subculture scholarship.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>System Status: Operational</span></div></div></div></footer></body></html>

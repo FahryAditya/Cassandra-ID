@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-subtle":"#E2E8F0","accent-gold":"#F2B705","tertiary":"#8a5020","surface-dim":"#ccdcee","inverse-surface":"#233240","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc5","inverse-on-surface":"#e8f2ff","background":"#f7f9ff","on-primary-container":"#004d63","accent-peach":"#FFB37A","on-primary-fixed-variant":"#004d63","on-secondary-container":"#671100","primary-fixed-dim":"#71d2fa","surface-bright":"#f7f9ff","accent-coral":"#E85D3D","surface-container-highest":"#d4e4f7","on-secondary-fixed":"#3d0600","primary-container":"#5ec1e8","inverse-primary":"#71d2fa","primary-fixed":"#bce9ff","primary":"#006783","error":"#ba1a1a","tertiary-container":"#efa56d","surface-pure":"#FFFFFF","on-error-container":"#93000a","on-tertiary-fixed-variant":"#6d3909","surface":"#f7f9ff","secondary":"#ad3317","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","outline":"#6e797e","surface-container-high":"#daeafd","surface-tint":"#006783","on-surface":"#0d1d2a","on-primary":"#ffffff","error-container":"#ffdad6","surface-variant":"#d4e4f7","secondary-fixed-dim":"#ffb4a3","on-tertiary-fixed":"#301400","on-surface-variant":"#3e484d","secondary-container":"#ff6e4c","on-error":"#ffffff","on-tertiary-container":"#6d390a","on-background":"#0d1d2a","on-primary-fixed":"#001f2a","text-muted":"#6B7C93","outline-variant":"#bec8ce","surface-container-low":"#edf4ff","tertiary-fixed-dim":"#ffb781","on-secondary-fixed-variant":"#8b1a00","surface-subtle":"#F8FAFC","secondary-fixed":"#ffdad2","surface-container":"#e3efff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","space-md":"1rem"},fontFamily:{"code-sm":["JetBrains Mono"],"headline-md":["\"Source Serif 4\""],"headline-lg":["\"Source Serif 4\""],"display-hero-mobile":["\"Source Serif 4\""],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["\"Source Serif 4\""],"quote-editorial":["\"Source Serif 4\""],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"display-hero":["\"Source Serif 4\""]},fontSize:{"code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],"quote-editorial":["20px",{lineHeight:"32px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"metric-display":["36px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}}</script></head><body class="bg-surface-pure font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-pure/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,42,56,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Cassandra.ID Logo" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(94,193,232,0.25)] ring-2 ring-primary-container/30 transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none font-bold">CASSANDRA<span class="text-primary-container">.ID</span></span><span class="font-label-sm text-label-sm tracking-wider text-text-muted mt-0.5">Anime · Research · Innovation</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-subtle/80 rounded-full" data-active-classes="bg-surface-container text-primary font-bold shadow-sm rounded-full"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="about" href="#">About</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="community" href="#">Community</a><a aria-current="page" class="px-space-md py-space-xs transition-all duration-150 bg-surface-container text-primary font-bold shadow-sm rounded-full" data-path="research" href="#">Research</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="innovation" href="#">Innovation</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="knowledge" href="#">Knowledge</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150 inline-flex items-center gap-1.5" data-path="archive" href="#">Archive 🍀</a></nav></div><div class="flex items-center gap-space-sm"><button aria-label="Search portal" class="hidden sm:flex items-center gap-space-sm px-space-md py-2 h-10 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm hidden md:inline">Search knowledge...</span><kbd class="hidden lg:inline-block font-code-sm text-code-sm bg-surface-pure px-1.5 py-0.5 rounded text-text-muted shadow-sm">⌘K</kbd></button><a class="inline-flex items-center gap-space-xs h-10 px-space-lg rounded-full bg-primary-container text-on-secondary font-label-md text-label-md shadow-[0_4px_14px_-2px_rgba(94,193,232,0.45)] hover:bg-[#4AB3DC] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150" href="https://chat.whatsapp.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Join WhatsApp</span></a><button aria-label="Open menu" class="xl:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-subtle text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/20 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/></div></div></header><main class="w-full pt-20 bg-surface-pure"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Anchor & Header Section -->
+<section class="relative w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pt-space-lg pb-space-xl">
+<!-- Ambient glowing subtle decorative orbs -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-24 left-10 w-72 h-72 bg-accent-peach/15 rounded-full blur-2xl pointer-events-none -z-10"></div>
+<!-- Header Meta & Title Structure -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="flex flex-col max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-3.5 py-1.5 rounded-full bg-surface-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider mb-space-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Cassandra Academic &amp; Inquiry Unit</span>
+<span class="text-accent-gold ml-1 font-bold">✧</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-none mb-space-sm">
+          Research Hub
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          Rigorous topic exploration crossing Japanese pop culture, artificial intelligence, multimedia technology, and scientific inquiry. Open documentation preserving subcultural epistemologies.
+        </p>
+</div>
+<!-- Quick Registry Metrics -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-subtle rounded-xl shadow-sm self-start lg:self-auto">
+<div class="px-space-md py-1 border-r border-border-subtle">
+<span class="block font-metric-display text-metric-display text-primary leading-none">48</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Indexed Papers</span>
+</div>
+<div class="px-space-md py-1 border-r border-border-subtle">
+<span class="block font-metric-display text-metric-display text-accent-coral leading-none">6</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Active Fields</span>
+</div>
+<div class="px-space-md py-1">
+<span class="block font-metric-display text-metric-display text-accent-gold leading-none">100%</span>
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Open Access</span>
+</div>
+</div>
+</div>
+<!-- Search and Taxonomy Quick Filter Bar -->
+<div class="mt-space-xl p-space-sm rounded-xl bg-surface-pure shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full md:w-96 flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-text-muted text-[20px]">search</span>
+<input class="w-full h-11 pl-11 pr-space-md rounded-lg bg-surface-subtle text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-pure text-ellipsis placeholder:text-text-muted transition-all" placeholder="Search abstracts, methodologies, DOIs..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto w-full md:w-auto pb-1 md:pb-0">
+<span class="font-label-sm text-label-sm text-text-muted px-space-xs whitespace-nowrap uppercase">Filter:</span>
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-secondary font-label-sm text-label-sm whitespace-nowrap shadow-sm">All Fields</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Peer Reviewed</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Working Drafts</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface font-label-sm text-label-sm whitespace-nowrap transition-colors">Datasets &amp; Code</button>
+</div>
+</div>
+</section>
+<!-- 6 Research Fields Grid (Numbered 01–06) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-code-sm text-code-sm text-primary-container uppercase font-bold tracking-widest">[DOMAINS]</span>
+<span class="h-px w-8 bg-primary-container"></span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Core Research Disciplines</h2>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted hidden sm:inline-block">Sorted by active research initiatives</span>
+</div>
+<!-- 6 Column/Cards Responsive Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Field 01: AI & ML -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-primary-container leading-none">01</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+            AI &amp; Machine Learning
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Generative rendering frameworks, neural animation pipelines, in-betweening algorithms, and computational computer vision applied to stylized aesthetics.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>14 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+<!-- Field 02: Anime & Japanese Culture -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-accent-peach/15 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral leading-none">02</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-accent-coral">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-accent-coral transition-colors">
+            Anime &amp; Japanese Culture
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Narrative semiotics, postwar historical development, subculture dialectics, otaku socio-ontology, and contemporary global distribution markets.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-accent-coral">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-coral"></span>
+<span>11 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-accent-coral group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+<!-- Field 03: Technology & Systems -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-primary leading-none">03</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">terminal</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+            Technology &amp; Systems
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            High-concurrency bot infrastructure, distributed archival databases, metadata ontologies, and resilient preservation protocols against link-rot.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>8 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+<!-- Field 04: Digital Media & Visual Arts -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-accent-gold/15 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-gold leading-none">04</span>
+<div class="w-10 h-10 rounded-full bg-surface-subtle flex items-center justify-center text-accent-gold">
+<span class="material-symbols-outlined text-[22px]">movie_filter</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-accent-gold transition-colors">
+            Digital Media &amp; Visual Arts
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            AMV / MAD rhythmic synthesis, non-linear video editing paradigms, acoustic synchronization, keyframe compositing, and dynamic graphic styling.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-text-muted">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-gold"></span>
+<span>6 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-accent-gold group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+<!-- Field 05: Community & Social Dynamics -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-fixed/25 rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-primary leading-none">05</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">diversity_3</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+            Community &amp; Social Dynamics
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Ephemeral group dynamics in chat channels, tacit knowledge transfer, decentralized moderation paradigms, and generational otaku cohort transitions.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>5 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+<!-- Field 06: Space & Science -->
+<div class="group flex flex-col justify-between p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-surface-container-high rounded-bl-full pointer-events-none transition-transform group-hover:scale-110"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-on-surface-variant leading-none">06</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">rocket_launch</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs group-hover:text-primary transition-colors">
+            Space &amp; Science
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Astrophysical fidelity in sci-fi animation, orbital mechanics simulation in visual fiction, theoretical propulsion concepts, and hard science realism.
+          </p>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-auto border-t border-surface-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-text-muted">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+<span>4 Papers Active</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-muted group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section Divider with Star Emblem -->
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin my-space-lg flex items-center justify-center gap-space-md">
+<span class="h-px flex-1 bg-accent-gold/40"></span>
+<span class="font-quote-editorial text-accent-gold tracking-widest text-sm flex items-center gap-2">
+<span>✦</span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-text-muted">CASSANDRA SCHOLARSHIP ARCHIVE</span>
+<span>✦</span>
+</span>
+<span class="h-px flex-1 bg-accent-gold/40"></span>
+</div>
+<!-- Featured Research Section -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-md mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="font-code-sm text-code-sm text-secondary uppercase font-bold tracking-widest">[FEATURED DISPATCHES]</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Highlighted Scientific Papers</h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:text-on-primary-container inline-flex items-center gap-1 mt-2 md:mt-0 transition-colors" href="#">
+<span>View full registry index</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Primary Spotlight Paper (8 cols) -->
+<article class="lg:col-span-8 flex flex-col p-space-lg sm:p-space-xl rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<!-- Visual Accent Strip -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-accent-peach via-accent-coral to-accent-gold"></div>
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md pt-2">
+<!-- Status Badge: Completed with Golden Star -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent-gold/15 text-on-surface font-label-sm text-label-sm shadow-xs">
+<span class="material-symbols-outlined text-accent-gold text-[16px]">star</span>
+<span class="font-semibold">Completed Peer Review</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">DOI: 10.3490/CAS.2026.09.01</span>
+</div>
+<div class="flex flex-col lg:flex-row gap-space-lg mb-space-md">
+<div class="flex-1">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">01. AI &amp; Machine Learning</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1 mb-space-sm leading-tight">
+              Exploring AI in Anime Production: Latent Frame Synthesis &amp; Keyframe Interpolation
+            </h3>
+<!-- Authors & Date Metadata -->
+<div class="flex flex-wrap items-center gap-y-1 gap-x-4 font-body-sm text-body-sm text-text-muted mb-space-md">
+<span class="inline-flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary-container text-[18px]">group</span>
+                Cassandra Research Team &amp; AI Study Group
+              </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                September 2026
+              </span>
+<span>•</span>
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+                34 pages
+              </span>
+</div>
+<!-- Abstract Excerpt -->
+<div class="p-space-md rounded-lg bg-surface-subtle mb-space-md">
+<span class="font-label-sm text-label-sm font-bold text-on-surface block mb-1 uppercase tracking-wide">Abstract Excerpt:</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                This study examines the implementation of hybrid conditional diffusion architectures within traditional 2D animation pipelines. By analyzing keyframe consistency across 1,200 production cuts, we demonstrate an 18.4% acceleration in in-betweening workflows while strictly retaining signature animator line weights, color balance, and artistic idiosyncrasies without artifact regression.
+              </p>
+</div>
+</div>
+<!-- Rich Visual / Diagram Illustration Placeholder -->
+<div class="lg:w-64 flex flex-col justify-center">
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Technical schematic diagram showing anime line art vector vectors being transformed through a deep learning neural network model into colored frames, blueprint style illustration with soft cyan and peach lines on pure white canvas, scientific visualization aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJe2BKp3rwnv2ZtwJd_hubPHSip7oRxZKmZIfDyZE-gwBiUYrLDE_ilK_vBbN8dZaPcN3BxKVad4qak4ZnXhU3OFWNMrP52jTF_MqBcFE689Q1OCCV8G3lGszJWx3tqMTn8eCUzgyGveox3tMsgCPG9kq4XadKqzuu2e9JgjLxEVCyFjMzyd6HFL4P-zXrCx90Ur41gbh4b3SS1vMzc2xARIpNGWhZJVhPLcw3wEBm07qcTcMwedCmKg"/>
+<div class="absolute bottom-2 left-2 bg-inverse-surface/85 backdrop-blur-md px-2 py-1 rounded font-code-sm text-code-sm text-inverse-on-surface">
+                Fig. 4: Pipeline Latent Drift
+              </div>
+</div>
+<div class="mt-3 flex items-center justify-between text-text-muted font-code-sm text-code-sm px-1">
+<span>Metric: 98.2% PSNR</span>
+<span>Sample: 120 FPS</span>
+</div>
+</div>
+</div>
+<!-- Footer Card Meta & Links -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-md border-t border-border-subtle mt-auto">
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-text-muted">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+<strong class="text-on-surface">18</strong> Citations &amp; References
+            </span>
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-text-muted">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<strong class="text-on-surface">1.4k</strong> Downloads
+            </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<a class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-subtle hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>Discussion (24)</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-space-lg py-2 rounded-lg bg-primary-container text-on-secondary font-label-md text-label-md shadow-sm hover:bg-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Read Full PDF</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Side Stack of Secondary Papers (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Paper 2: Ongoing Badge -->
+<article class="flex flex-col p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-shadow relative">
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<!-- Sky blue Ongoing badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container/15 text-on-primary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-semibold">Ongoing Investigation</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">Vol. 4 Issue 2</span>
+</div>
+<span class="font-label-sm text-label-sm text-accent-coral uppercase tracking-wider font-semibold">02. Anime &amp; Japanese Culture</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-space-xs leading-snug">
+            Deconstructing Subculture Vocabulary: A 5-Year Sociolinguistic Archive
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-space-md">
+            Cataloging phonetic loanwords, vernacular shifts inside private otaku online spheres, and linguistic evolution across 47,000 public channel transcripts from 2020 through 2025.
+          </p>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-text-muted mt-auto pt-space-sm border-t border-border-subtle">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span>
+              Dr. R. Morita &amp; Team
+            </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline inline-flex items-center gap-1" href="#">
+<span>View Abstract</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- Paper 3: Development Badge -->
+<article class="flex flex-col p-space-lg rounded-xl bg-surface-pure shadow-sm hover:shadow-md transition-shadow relative">
+<div class="flex items-center justify-between gap-space-xs mb-space-sm">
+<!-- Coral/Peach Development badge -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-accent-peach/20 text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-accent-coral"></span>
+<span class="font-semibold">In Development</span>
+</div>
+<span class="font-code-sm text-code-sm text-text-muted">Pre-print CAS-92</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">01. AI &amp; Machine Learning</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 mb-space-xs leading-snug">
+            Automated Anime Scene Classification using Lightweight CNNs
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 mb-space-md">
+            Deploying quantized MobileNet architectures directly in edge browsers for zero-latency frame taxonomy, scene transition detection, and character pose identification.
+          </p>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-text-muted mt-auto pt-space-sm border-t border-border-subtle">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">code</span>
+              TensorFlow Model v0.4
+            </span>
+<a class="font-label-sm text-label-sm text-primary hover:underline inline-flex items-center gap-1" href="#">
+<span>Code Repository</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Collaborative Peer Callout Banner -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin mb-space-xl">
+<div class="p-space-lg sm:p-space-xl rounded-xl bg-surface-container-low shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-64 h-64 bg-primary-container/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">science</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Open Call for Papers &amp; Datasets</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">
+          Contribute Your Research to the Cassandra Sanctuary
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Independent scholars, data engineers, and cultural theorists can submit working drafts, AMV analyses, or trained lightweight weights for community archiving and citation indexing.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<button class="px-space-lg py-3 rounded-full bg-surface-pure hover:bg-surface text-on-surface font-label-md text-label-md shadow-sm transition-all">
+          Submission Criteria
+        </button>
+<button class="px-space-lg py-3 rounded-full bg-primary-container hover:bg-primary text-on-secondary font-label-md text-label-md shadow-sm transition-all flex items-center gap-2">
+<span>Submit Manuscript</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-subtle pt-space-xl pb-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col items-start pr-0 lg:pr-space-lg"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Cassandra Emblem" class="w-9 h-9 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">CASSANDRA<span class="text-primary-container">.ID</span></span></div><p class="font-quote-editorial text-quote-editorial italic text-on-surface-variant mb-space-md">Community → Knowledge → Innovation</p><p class="font-body-sm text-body-sm text-text-muted leading-relaxed max-w-sm mb-space-md">An open scientific sanctuary bridging scholarly anime archiving, otaku subculture ontology, and collaborative computational innovation.</p><div class="flex items-center gap-2 text-accent-gold"><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span><span class="material-symbols-outlined text-[16px]">star</span></div></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Ecosystem</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="home" href="#">Home</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="about" href="#">About</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="community" href="#">Community Forum</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Knowledge &amp; Lab</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="research" href="#">Research Hub</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="innovation" href="#">Innovation Lab</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="knowledge" href="#">Knowledge Base</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Heritage</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="cloverotaku-museum" href="#">CloverOtaku Museum</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="the-349" href="#">The 349</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="memory-wall" href="#">Memory Wall</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Social &amp; Hubs</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">forum</span><a class="text-text-muted hover:text-primary transition-colors" href="#">WhatsApp Group</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">groups</span><a class="text-text-muted hover:text-primary transition-colors" href="#">Discord Guild</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">terminal</span><a class="text-text-muted hover:text-primary transition-colors" href="#">GitHub Commons</a></li></ul></div></div><div class="w-full flex items-center justify-center gap-space-md py-space-sm"><span class="h-[1px] flex-1 bg-accent-gold/40"></span><span class="material-symbols-outlined text-accent-gold text-[16px]">star_rate</span><span class="h-[1px] flex-1 bg-accent-gold/40"></span></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><p>© 2025 Cassandra.ID Foundation. All rights reserved. Archival preservation for anime &amp; subculture scholarship.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>System Status: Operational</span></div></div></div></footer></body></html>

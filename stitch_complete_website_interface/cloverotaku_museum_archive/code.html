@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-subtle":"#E2E8F0","accent-gold":"#F2B705","tertiary":"#8a5020","surface-dim":"#ccdcee","inverse-surface":"#233240","on-secondary":"#ffffff","tertiary-fixed":"#ffdcc5","inverse-on-surface":"#e8f2ff","background":"#f7f9ff","on-primary-container":"#004d63","accent-peach":"#FFB37A","on-primary-fixed-variant":"#004d63","on-secondary-container":"#671100","primary-fixed-dim":"#71d2fa","surface-bright":"#f7f9ff","accent-coral":"#E85D3D","surface-container-highest":"#d4e4f7","on-secondary-fixed":"#3d0600","primary-container":"#5ec1e8","inverse-primary":"#71d2fa","primary-fixed":"#bce9ff","primary":"#006783","error":"#ba1a1a","tertiary-container":"#efa56d","surface-pure":"#FFFFFF","on-error-container":"#93000a","on-tertiary-fixed-variant":"#6d3909","surface":"#f7f9ff","secondary":"#ad3317","on-tertiary":"#ffffff","surface-container-lowest":"#ffffff","outline":"#6e797e","surface-container-high":"#daeafd","surface-tint":"#006783","on-surface":"#0d1d2a","on-primary":"#ffffff","error-container":"#ffdad6","surface-variant":"#d4e4f7","secondary-fixed-dim":"#ffb4a3","on-tertiary-fixed":"#301400","on-surface-variant":"#3e484d","secondary-container":"#ff6e4c","on-error":"#ffffff","on-tertiary-container":"#6d390a","on-background":"#0d1d2a","on-primary-fixed":"#001f2a","text-muted":"#6B7C93","outline-variant":"#bec8ce","surface-container-low":"#edf4ff","tertiary-fixed-dim":"#ffb781","on-secondary-fixed-variant":"#8b1a00","surface-subtle":"#F8FAFC","secondary-fixed":"#ffdad2","surface-container":"#e3efff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xs":"0.25rem","gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","space-md":"1rem"},fontFamily:{"code-sm":["JetBrains Mono"],"headline-md":["\"Source Serif 4\""],"headline-lg":["\"Source Serif 4\""],"display-hero-mobile":["\"Source Serif 4\""],"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["\"Source Serif 4\""],"quote-editorial":["\"Source Serif 4\""],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"display-hero":["\"Source Serif 4\""]},fontSize:{"code-sm":["12px",{lineHeight:"18px",fontWeight:"500"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"600"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-lg-mobile":["28px",{lineHeight:"36px",fontWeight:"600"}],"quote-editorial":["20px",{lineHeight:"32px",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"metric-display":["36px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}}</script></head><body class="bg-surface-pure font-body-md text-body-md text-on-surface min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-pure/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,42,56,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="Cassandra.ID Logo" class="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(94,193,232,0.25)] ring-2 ring-primary-container/30 transition-transform duration-200 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-none font-bold">CASSANDRA<span class="text-primary-container">.ID</span></span><span class="font-label-sm text-label-sm tracking-wider text-text-muted mt-0.5">Anime · Research · Innovation</span></div></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-subtle/80 rounded-full" data-active-classes="bg-surface-container text-primary font-bold shadow-sm rounded-full"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="home" href="#">Home</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="about" href="#">About</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="community" href="#">Community</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="research" href="#">Research</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="innovation" href="#">Innovation</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150" data-path="knowledge" href="#">Knowledge</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-all duration-150 inline-flex items-center gap-1.5" data-path="archive" href="#">Archive 🍀</a></nav></div><div class="flex items-center gap-space-sm"><button aria-label="Search portal" class="hidden sm:flex items-center gap-space-sm px-space-md py-2 h-10 rounded-full bg-surface-subtle text-text-muted hover:text-on-surface hover:bg-surface-container-low transition-colors duration-150" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm hidden md:inline">Search knowledge...</span><kbd class="hidden lg:inline-block font-code-sm text-code-sm bg-surface-pure px-1.5 py-0.5 rounded text-text-muted shadow-sm">⌘K</kbd></button><a class="inline-flex items-center gap-space-xs h-10 px-space-lg rounded-full bg-primary-container text-on-secondary font-label-md text-label-md shadow-[0_4px_14px_-2px_rgba(94,193,232,0.45)] hover:bg-[#4AB3DC] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-150" href="https://chat.whatsapp.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Join WhatsApp</span></a><button aria-label="Open menu" class="xl:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-subtle text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary-container/20 shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/></div></div></header><main class="w-full pt-20 bg-surface-pure"><div class="flex flex-col w-full">
+<!-- Top Heritage Ambient Banner -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface-pure to-surface-pure pb-space-xl pt-space-lg">
+<!-- Subtle Archival Glow & Star Emblems -->
+<div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-gradient-to-r from-accent-peach/20 via-accent-coral/15 to-accent-gold/20 blur-3xl rounded-full"></div>
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin relative z-10">
+<!-- Breadcrumb & Heritage Chip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-text-muted">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest/60 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="text-accent-coral font-normal">🍀</span> ARCHIVAL SPECIAL COLLECTION
+          </span>
+<span class="text-outline-variant">/</span>
+<span>RECORD REF: CLV-2018-349</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-semibold">PERMANENT EXHIBITION</span>
+</div>
+<!-- System Preserved Badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-accent-gold text-[16px]">verified</span>
+<span>Preserved Canonical Archive · 2018–2024</span>
+</div>
+</div>
+<!-- Hero Typography and Insignia Duo -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center mb-space-xl">
+<div class="lg:col-span-8 flex flex-col">
+<div class="flex items-center gap-2.5 mb-space-sm">
+<span class="material-symbols-outlined text-accent-gold text-[20px]">star</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-accent-coral font-bold">The Memorial Hall &amp; Archive Vault</span>
+<span class="material-symbols-outlined text-accent-gold text-[20px]">star</span>
+</div>
+<h1 class="font-display-hero text-display-hero-mobile lg:text-display-hero text-on-surface tracking-tight leading-[1.08] mb-space-md">
+            🍀 CLOVEROTAKU.ID <span class="italic font-headline-lg font-normal bg-gradient-to-r from-secondary to-accent-coral bg-clip-text text-transparent">MUSEUM</span>
+</h1>
+<p class="font-quote-editorial text-quote-editorial text-on-surface-variant italic leading-relaxed max-w-3xl mb-space-lg">
+            “Preserving the communities that came before us — honoring the passionate discussions, midnight debate logs, and the bonded fellowship of The 349 that ignited Cassandra.ID.”
+          </p>
+<!-- Core Fast Stats Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm max-w-2xl bg-surface-container-low rounded-xl p-space-sm shadow-sm">
+<div class="flex flex-col px-space-sm py-space-xs bg-surface-pure rounded-lg shadow-sm">
+<span class="font-metric-display text-headline-md text-secondary leading-none">349</span>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Founding Cohort</span>
+</div>
+<div class="flex flex-col px-space-sm py-space-xs bg-surface-pure rounded-lg shadow-sm">
+<span class="font-metric-display text-headline-md text-accent-coral leading-none">2,140+</span>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Archived Debates</span>
+</div>
+<div class="flex flex-col px-space-sm py-space-xs bg-surface-pure rounded-lg shadow-sm">
+<span class="font-metric-display text-headline-md text-accent-gold leading-none">6 Yrs</span>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Active Era</span>
+</div>
+<div class="flex flex-col px-space-sm py-space-xs bg-surface-pure rounded-lg shadow-sm">
+<span class="font-metric-display text-headline-md text-primary leading-none">100%</span>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Open Legacy</span>
+</div>
+</div>
+</div>
+<!-- Commemorative Seal Visual Tile -->
+<div class="lg:col-span-4 flex justify-center lg:justify-end">
+<div class="relative group p-space-md bg-surface-pure rounded-2xl shadow-xl flex flex-col items-center text-center max-w-xs w-full transition-transform duration-300 hover:-translate-y-1">
+<div class="absolute inset-0 bg-gradient-to-b from-accent-peach/20 via-accent-coral/10 to-transparent rounded-2xl pointer-events-none"></div>
+<!-- Seal Render SVG -->
+<div class="relative w-48 h-48 rounded-full bg-surface-container-high flex items-center justify-center p-3 shadow-inner my-space-xs">
+<div class="w-full h-full rounded-full bg-surface-pure flex flex-col items-center justify-center relative overflow-hidden shadow-md">
+<!-- Compass Stars -->
+<span class="material-symbols-outlined absolute top-1 text-accent-gold text-[16px]">star</span>
+<span class="material-symbols-outlined absolute bottom-1 text-accent-gold text-[16px]">star</span>
+<span class="material-symbols-outlined absolute left-1 text-accent-gold text-[16px]">star</span>
+<span class="material-symbols-outlined absolute right-1 text-accent-gold text-[16px]">star</span>
+<!-- Stylized Clover / Maple Leaf Insignia -->
+<svg class="w-24 h-24 drop-shadow-md text-accent-coral" fill="currentColor" viewbox="0 0 100 100">
+<path d="M50 8 C48 20 38 28 32 30 C30 22 24 16 16 20 C10 24 12 34 20 38 C14 42 6 48 8 56 C10 64 20 64 26 62 C22 72 26 82 34 82 C42 82 46 72 48 66 L48 92 C48 94 52 94 52 92 L52 66 C54 72 58 82 66 82 C74 82 78 72 74 62 C80 64 90 64 92 56 C94 48 86 42 80 38 C88 34 90 24 84 20 C76 16 70 22 68 30 C62 28 52 20 50 8 Z" fill="url(#coralGrad)"></path>
+<defs>
+<lineargradient id="coralGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#FFB37A"></stop>
+<stop offset="100%" stop-color="#E85D3D"></stop>
+</lineargradient>
+</defs>
+</svg>
+<span class="font-headline-sm text-[11px] font-bold tracking-[0.25em] text-on-surface mt-1">CASSANDRA</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface mt-space-xs">The Original Covenant</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Sanctuary of Otaku Philosophy</span>
+<div class="w-full flex items-center justify-between pt-space-md mt-space-sm font-code-sm text-code-sm text-secondary">
+<span>EST. 2018</span>
+<span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-accent-coral"></span>349 LEGACY</span>
+<span>IN PERPETUITY</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Ornamental Dividing Line -->
+<div class="w-full flex items-center justify-center gap-space-md my-space-md">
+<span class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent"></span>
+<div class="flex items-center gap-1.5 text-accent-gold">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span class="material-symbols-outlined text-[14px]">star</span>
+</div>
+<span class="h-[1px] flex-1 bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent"></span>
+</div>
+</div>
+</section>
+<!-- Section: Introductory Narrative Plaque -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg w-full">
+<div class="bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl relative overflow-hidden shadow-md">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-accent-peach/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col">
+<div class="inline-flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Historical Foundation &amp; Ethos</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-md">
+            From WhatsApp Night Owls to an Otaku Research Academy
+          </h2>
+<div class="space-y-space-md text-on-surface-variant font-body-md text-body-md leading-relaxed">
+<p>
+              In late 2018, before formal subcultural registries and taxonomy databases existed, a modest WhatsApp enclave titled <strong class="text-on-surface font-semibold">CloverOtaku.ID</strong> formed. What began as rapid-fire episodic reviews evolved into exhaustive 4,000-word midnight treatises examining narrative semiotics in <em>Evangelion</em>, world-building geopolitics in <em>Fullmetal Alchemist</em>, and the socio-economic impacts of Comiket fan conventions.
+            </p>
+<p>
+              When the WhatsApp member cap was reached at exactly <strong class="text-secondary font-semibold">349 members</strong>, that closed guild turned into an accidental crucible of thought. The sheer density of debates revealed a critical need: ephemeral chat logs were evaporating into history. To safeguard this rich intellectual heritage, the founders transformed the community into Cassandra.ID.
+            </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md mt-space-lg">
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-full bg-gradient-to-b from-accent-peach to-accent-coral text-on-secondary font-label-md text-label-md shadow-md hover:opacity-95 hover:-translate-y-0.5 transition-all" href="#artifacts">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span>Tour The Museum Artifacts</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-full bg-surface-pure text-secondary font-label-md text-label-md shadow-sm hover:bg-surface-container-highest transition-all" href="#the-349">
+<span class="material-symbols-outlined text-[18px]">person_pin_circle</span>
+<span>View The 349 Roll of Honor</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Curatorial Snapshot Card -->
+<div class="bg-surface-pure rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-label-sm text-label-sm text-text-muted font-mono">ARCHIVE NODE 001</span>
+<span class="text-accent-gold flex items-center gap-1 font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">grade</span> CANONICAL
+              </span>
+</div>
+<!-- Historical Illustration Placeholder -->
+<div class="relative w-full h-52 rounded-lg overflow-hidden mb-space-sm shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Warm nostalgic archival exhibition display showing vintage anime discussion forum transcripts, glowing paper journals with handwritten anime lore diagrams, warm golden museum lighting with gentle floating dust motes, and soft amber peach highlights honoring early internet otaku subculture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbxrojnkmvufGENIdjF24t6-yxl2kxOKQE8EYyAYTR61TySyEFrnpVj_O9Y5Z4GaGkuGq7J6gqW-QeSLlmIAp-0UnbzF_yyRhMIWSEXx7Mcvcbe19mI8mMPlugpwce64Iw_gmHu4MAv9Lmcn4IZ-whsrZw9I5VgZ1rfVREiFb_0T037Nczmqay55QbXHmQzCuB9RG2u-hUODARYqIcxq9TSlW91SKp9BylUqd7_lbvFa5lKj3QZjQYg"/>
+<div class="absolute bottom-2 left-2 bg-surface-pure/90 backdrop-blur-md px-2.5 py-1 rounded-md text-[11px] font-mono text-on-surface">
+                Archive Log #041 · 2019
+              </div>
+</div>
+<p class="font-quote-editorial text-body-md italic text-on-surface-variant leading-snug">
+              “We weren’t merely consuming episodes; we were deconstructing contemporary mythology. CloverOtaku proved that fandom can be scholarly.”
+            </p>
+<span class="font-label-sm text-label-sm text-text-muted mt-space-xs">— Aris Thorne, CloverOtaku Curator #014</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Interactive Museum Navigation Plaques (7 Canonical Galleries) -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-xl w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[18px]">museum</span>
+<span>Curatorial Wings</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Exhibition Galleries &amp; Archival Records
+        </h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-md">
+        Select any preserved gallery wing below to inspect primary source logs, early member registries, high-stakes forum transcripts, and evolutionary paths.
+      </p>
+</div>
+<!-- 7 Gallery Grid (Level 1 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-space-lg">
+<!-- Plaque 1 -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#beginning">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral opacity-90 leading-none">01</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-accent-coral group-hover:bg-accent-coral group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          The Beginning &amp; Date Founded
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          November 18, 2018. The creation of the first WhatsApp cluster, initial server manifesto, and early charter by 5 core co-founders.
+        </p>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold mt-auto">
+<span>Read Charter Logs</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 2 -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#milestones">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral opacity-90 leading-none">02</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-accent-coral group-hover:bg-accent-coral group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">timeline</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          Our Journey &amp; Milestones
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          Interactive historical chronologies detailing the first watch-party synchronizations, physical convention gatherings, and research shifts.
+        </p>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold mt-auto">
+<span>Explore Timeline</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 3: Dedicated Memorial Highlight -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#the-349">
+<div class="absolute top-0 right-0 px-3 py-1 bg-gradient-to-r from-accent-peach to-accent-coral text-on-secondary font-label-sm text-[11px] font-bold rounded-bl-xl">
+          PERMANENT COVENANT
+        </div>
+<div class="flex items-center justify-between mb-space-md mt-1">
+<span class="font-metric-display text-metric-display text-secondary leading-none">03</span>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          The 349 Members
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          The definitive scroll of all 349 original participants who formed the capped roster. Includes early handles, titles, and archival indices.
+        </p>
+<div class="flex items-center gap-2 text-secondary font-label-md text-label-md font-bold mt-auto">
+<span>Open Roll of Honor</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 4 -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#golden-era">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral opacity-90 leading-none">04</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-accent-coral group-hover:bg-accent-coral group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          Golden Era Memories
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          The memorable anime debates of 2019–2021: The <em>Steins;Gate</em> worldline theorems, Mecha vs. Slice of Life debates, and seasonal tier lists.
+        </p>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold mt-auto">
+<span>Examine Highlights</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 5 -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#voices">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral opacity-90 leading-none">05</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-accent-coral group-hover:bg-accent-coral group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">format_quote</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          Voices of Clover
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          Pesan &amp; Kesan: Unedited personal reflections, emotional testaments, and commemorative messages recorded when the group graduated.
+        </p>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold mt-auto">
+<span>Read Testimonials</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 6 -->
+<a class="group flex flex-col bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden" href="#artifacts">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-metric-display text-metric-display text-accent-coral opacity-90 leading-none">06</span>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-accent-coral group-hover:bg-accent-coral group-hover:text-surface-pure transition-colors">
+<span class="material-symbols-outlined text-[20px]">perm_media</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors mb-space-xs">
+          Digital Artifacts Wall
+        </h3>
+<p class="font-body-sm text-body-sm text-text-muted leading-relaxed mb-space-md flex-1">
+          Early UI screenshots, WhatsApp export snippets, hand-drawn mascot drafts, meet-up badges, and commemorative anniversary wallpaper files.
+        </p>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold mt-auto">
+<span>Inspect Artifacts</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Plaque 7: Spans across or features evolution -->
+<a class="group md:col-span-2 lg:col-span-3 xl:col-span-2 flex flex-col sm:flex-row items-center gap-space-lg bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200" href="#evolution">
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm font-bold uppercase mb-1">
+<span class="material-symbols-outlined text-[18px]">transform</span>
+<span>Evolution Pipeline</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors mb-space-xs">
+            07. From Clover to Cassandra
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            The bridge from an informal chat network to an open scientific portal. How the spirit of the Cloverleaf blossomed into open-source anime metadata tools.
+          </p>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md font-bold mt-auto">
+<span>View The Genesis Shift</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="w-full sm:w-44 h-36 rounded-lg overflow-hidden shrink-0 shadow-sm relative">
+<img class="w-full h-full object-cover" data-alt="High quality conceptual artwork illustrating a digital bridge connecting a glowing warm orange clover blossom with a futuristic cyan-blue scholarly network map, representing the transformation from CloverOtaku to Cassandra.ID in clean editorial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd1d5TTAu84zLXGFkMOCm6hYO_33_nwNPBoDDPydAN5b8ICw6eKbgbG4sQ6IePEvQ82uh4o5jIO_hfXS1tHZk8SC6qj8p6MnyUQ0vudn-62miTRNMwUklWQXL2ezMwvJ080xv-NDQmkIZzhoOM1_BnYsIYVPPH52RtMcjVxFf57ydzf4kTr_qE38Q7kt3K8KLaaKhFSdb5YteaJ0wsNuBnRCAUuem6QTYkSXcJ0M8JNdlaF8sK4pHIDA"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+</a>
+</div>
+</section>
+<!-- Section: Featured Showcase — 'The Journey to 349' & Milestone Diagram -->
+<section class="w-full bg-surface-subtle py-space-xl" id="milestones">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[18px]">linear_scale</span>
+<span>Canonical Growth Trajectory</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            The Journey to 349
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted max-w-lg">
+          Key turning points across six years: how an invitation-only group reached structural peak capacity and sparked an open research revolution.
+        </p>
+</div>
+<!-- Horizontal & Vertical Milestone Pipeline -->
+<div class="relative bg-surface-pure rounded-2xl p-space-lg lg:p-space-xl shadow-sm">
+<!-- Interactive Node Track (SVG Connector line) -->
+<div class="hidden lg:block absolute top-[94px] left-16 right-16 h-1 bg-surface-container rounded-full pointer-events-none">
+<div class="h-full bg-gradient-to-r from-accent-peach via-accent-coral to-primary-container rounded-full w-4/5"></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-lg relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-start group">
+<div class="w-12 h-12 rounded-full bg-accent-peach/20 text-accent-coral flex items-center justify-center font-bold text-label-md mb-space-md shadow-sm ring-4 ring-surface-pure">
+              01
+            </div>
+<span class="font-code-sm text-code-sm text-secondary font-semibold uppercase">NOV 2018</span>
+<h4 class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface mt-1 mb-1">Seed Planted</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              5 initial anime scholars launch CloverOtaku on WhatsApp. The first 50 invitations fill in 72 hours.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-start group">
+<div class="w-12 h-12 rounded-full bg-accent-peach/30 text-accent-coral flex items-center justify-center font-bold text-label-md mb-space-md shadow-sm ring-4 ring-surface-pure">
+              02
+            </div>
+<span class="font-code-sm text-code-sm text-secondary font-semibold uppercase">JUL 2019</span>
+<h4 class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface mt-1 mb-1">The 100 Landmark</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Standardization of daily episodic reviews. First physical group gathering at Comic Frontier Jakarta.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-start group">
+<div class="w-12 h-12 rounded-full bg-accent-coral/20 text-accent-coral flex items-center justify-center font-bold text-label-md mb-space-md shadow-sm ring-4 ring-surface-pure">
+              03
+            </div>
+<span class="font-code-sm text-code-sm text-accent-coral font-semibold uppercase">OCT 2020</span>
+<h4 class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface mt-1 mb-1">Cap at 256</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              First WhatsApp member ceiling hit. Waiting lists initiate peer review entry essays to maintain community depth.
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-start group">
+<div class="w-12 h-12 rounded-full bg-accent-coral text-surface-pure flex items-center justify-center font-bold text-label-md mb-space-md shadow-md ring-4 ring-surface-pure">
+              04
+            </div>
+<span class="font-code-sm text-code-sm text-accent-coral font-semibold uppercase">MAR 2022</span>
+<h4 class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface mt-1 mb-1">The Capped 349</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              WhatsApp capacity expanded and locked permanently at 349 active participants. The Golden Era of theory formulation.
+            </p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-start group">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-label-md mb-space-md shadow-sm ring-4 ring-surface-pure">
+              05
+            </div>
+<span class="font-code-sm text-code-sm text-primary font-semibold uppercase">JAN 2025</span>
+<h4 class="font-headline-sm text-[17px] leading-snug font-bold text-on-surface mt-1 mb-1">Cassandra Genesis</h4>
+<p class="font-body-sm text-body-sm text-text-muted">
+              Formal museum preservation. Archival code open-sourced. Community graduated to an international scientific hub.
+            </p>
+</div>
+</div>
+<!-- Milestones Data Visualization Preview Card -->
+<div class="mt-space-xl pt-space-lg bg-surface-container-low rounded-xl p-space-md lg:p-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-text-muted">Historical Volume</span>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Debate Density Across Key Epochs</h5>
+</div>
+<div class="flex items-center gap-space-md font-body-sm text-body-sm">
+<span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-accent-peach"></span>Early Years</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-accent-coral"></span>Peak 349 Era</span>
+<span class="inline-flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-primary-container"></span>Cassandra Phase</span>
+</div>
+</div>
+<!-- SVG Bar Sparkline Visual -->
+<div class="w-full h-28 flex items-end justify-between gap-1.5 pt-4">
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-peach/50 rounded-t group-hover:bg-accent-peach transition-all" style="height: 28px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2018</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-peach/70 rounded-t group-hover:bg-accent-peach transition-all" style="height: 46px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2019</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-peach rounded-t group-hover:bg-accent-coral transition-all" style="height: 64px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2020</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-coral/70 rounded-t group-hover:bg-accent-coral transition-all" style="height: 85px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2021</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-coral rounded-t group-hover:bg-secondary transition-all" style="height: 100px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2022</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-accent-coral rounded-t group-hover:bg-secondary transition-all" style="height: 92px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2023</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-secondary rounded-t group-hover:bg-primary transition-all" style="height: 78px;"></div>
+<span class="font-code-sm text-[10px] text-text-muted">2024</span>
+</div>
+<div class="w-full flex flex-col items-center gap-1.5 group">
+<div class="w-full bg-primary-container rounded-t group-hover:bg-primary transition-all" style="height: 98px;"></div>
+<span class="font-code-sm text-[10px] text-primary font-bold">2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Voices of Clover (Pesan & Kesan Testimonials with Golden Quotes) -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-xl w-full" id="voices">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<div class="inline-flex items-center gap-1.5 text-accent-gold mb-space-xs">
+<span class="material-symbols-outlined text-[16px]">star</span>
+<span class="material-symbols-outlined text-[20px]">format_quote</span>
+<span class="material-symbols-outlined text-[16px]">star</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Voices of Clover
+      </h2>
+<p class="font-quote-editorial text-quote-editorial text-on-surface-variant italic mt-2">
+        “Pesan &amp; Kesan — Echoes from the founding scholars”
+      </p>
+</div>
+<!-- Testimonial Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col relative">
+<span class="font-quote-editorial text-5xl text-accent-gold leading-none select-none font-serif">“</span>
+<p class="font-quote-editorial text-body-md italic text-on-surface-variant leading-relaxed -mt-4 mb-space-lg flex-1">
+          CloverOtaku was the sole space on Indonesian internet where you could write twelve paragraphs explaining the existential dread of <em>Shinji Ikari</em> at 2:00 AM and have seven people instantly rebut your thesis with Heideggerian ontology. It changed my entire intellectual trajectory.
+        </p>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-lg">
+<div class="w-10 h-10 rounded-full bg-accent-peach/30 text-accent-coral flex items-center justify-center font-bold text-label-sm shrink-0">
+            #082
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Rafi 'Kusanagi' Pratama</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Philosophy &amp; Anime Columnist · Member #082</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-pure rounded-xl p-space-lg shadow-md hover:shadow-xl transition-all duration-200 flex flex-col relative">
+<span class="font-quote-editorial text-5xl text-accent-gold leading-none select-none font-serif">“</span>
+<p class="font-quote-editorial text-body-md italic text-on-surface-variant leading-relaxed -mt-4 mb-space-lg flex-1">
+          When WhatsApp locked our membership at 349, we didn’t fracture — we hardened into a true fellowship. We shared rare artbook scans, unreleased CD dramas, and fan translation proofs. To see Cassandra honor our little haven with this pristine archive brings tears to my eyes.
+        </p>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-lg">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center font-bold text-label-sm shrink-0">
+            #004
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Dewi 'SaberLover' S.</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Co-Founder &amp; Media Archivist · Member #004</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-pure rounded-xl p-space-lg shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col relative">
+<span class="font-quote-editorial text-5xl text-accent-gold leading-none select-none font-serif">“</span>
+<p class="font-quote-editorial text-body-md italic text-on-surface-variant leading-relaxed -mt-4 mb-space-lg flex-1">
+          What made Clover unique was that toxicity was replaced with scholarly curiosity. A disagreement over <em>Cowboy Bebop’s</em> finale wasn’t an insult match; it was an evidentiary trial. That ethos lives on in Cassandra’s open innovation hubs today.
+        </p>
+<div class="flex items-center gap-space-sm pt-space-sm bg-surface-container-low p-2 rounded-lg">
+<div class="w-10 h-10 rounded-full bg-accent-peach/30 text-accent-coral flex items-center justify-center font-bold text-label-sm shrink-0">
+            #219
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Bima Arya</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Soundtrack Analyst · Member #219</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Digital Artifacts & Screenshots Wall Showcase -->
+<section class="w-full bg-surface-container-low py-space-xl" id="artifacts">
+<div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-2 text-accent-coral font-label-sm text-label-sm font-bold uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Vault Gallery</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Digital Artifacts &amp; Relics Wall
+          </h2>
+</div>
+<!-- Filter Pills -->
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold shadow-sm">All Preserved Relics</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-pure text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-colors">Chat Exports</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-pure text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-colors">Meet-up Badges</button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-pure text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-colors">Early Sketches</button>
+</div>
+</div>
+<!-- Bento Grid of Archival Photos -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-space-md">
+<!-- Artifact 1 (Spans 2 cols) -->
+<div class="md:col-span-2 relative group rounded-xl overflow-hidden shadow-md bg-surface-pure h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vintage smartphone screen showing a pristine archival capture of a 2019 WhatsApp discussion group named CloverOtaku.ID with 349 participants, animated debates, anime character avatar icons, and late-night timestamps." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBht8k7qNT9dnMbf8uooVUV69Axci5mpytJ4YT51jCeX3WsupWG5aHxPim_DJ4sUqfVnP8JWzEemm5W82S4QhEPX4F18BbQgw_e6bNLZfE3zvELYDKHdWQikC-KwLjYCl5ZHh5wgedTwNC-bLi8URkJo96-ESgBTpjV7djqQTOG4bF0BTNAZBqk_FoA5evYzSxMDFl6bD7K8eSZ3Dq8Cj_Hc4pVbDlP9-O1H98O4zkEe8o3o2UXMOZyVA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent flex flex-col justify-end p-space-md text-inverse-on-surface">
+<span class="font-code-sm text-code-sm text-accent-peach font-semibold uppercase">Chat Archive Record #01</span>
+<h4 class="font-headline-sm text-[18px] font-bold text-surface-pure">The Great End of Evangelion Debate Transcript</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest line-clamp-1">84 continuous hours of theoretical argumentation logged between June 4-7, 2019.</p>
+</div>
+</div>
+<!-- Artifact 2 -->
+<div class="relative group rounded-xl overflow-hidden shadow-md bg-surface-pure h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Preserved physical convention lanyards, handmade anime badges with a four leaf clover emblem, and stamped ticket stubs from an Indonesian anime exhibition in 2019, photographed on an archival wooden desk with gentle golden studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCqLlyy2v5KBbABV4si_qt70bhwygxRJi-b9n683GsX114gNRG1h4jDtpfAZLVZjYP2LWGKQBki7WygPg6MbGbh6R9EZuQkl5vulQmAAp5oPcZ8dH97n7gQi2cNNYOx_LRfW2qDW4LQuXK-_vOfJ82MQk28M9WJif8DlrcXNJu9Io8eraD3i7oahthBOWwB4pZUO-uUL5cubehHjDmBVZUkb7BK04kDt26xmuk-rxLQoFU3icyGDGc7Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent flex flex-col justify-end p-space-md text-inverse-on-surface">
+<span class="font-code-sm text-code-sm text-accent-gold font-semibold uppercase">Physical Token</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-surface-pure">Comifuro 13 Guild Lanyards</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest line-clamp-1">First in-person gathering token issued to 42 attending members.</p>
+</div>
+</div>
+<!-- Artifact 3 -->
+<div class="relative group rounded-xl overflow-hidden shadow-md bg-surface-pure h-72">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A digital sketchbook scan showing the early hand-drawn draft concept of the CloverOtaku mascot, with pencil annotations, geometric leaf circles, warm peach color swatches, and Japanese calligraphy notes in clean archival lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwaWNfe83lJUNC9Xe-m3PzOi1dyawSb3eywbeV-UXumqkoTnVcB-VkZeNGKk-WrZ_WrZNieAgylgScYVWez94Ew2V_mCCeJ4i1Yoit1paodNAm7HJC1EvNBgVZ0KmZZpcq9QBh_bPEuGeFPOWeO-lnBX75twHBgUAH80MMHtSM2PczAzwJi121UUYmnpZ7p3Oar6_pTPNqcbgaxljJyPwkoL2bZJOuywrdka6Pr_Xb6g-cUw-zbAooFQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent flex flex-col justify-end p-space-md text-inverse-on-surface">
+<span class="font-code-sm text-code-sm text-accent-peach font-semibold uppercase">Design Relic</span>
+<h4 class="font-headline-sm text-[16px] font-bold text-surface-pure">Original Mascot Draft #03</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest line-clamp-1">Pencil sketches that later inspired Cassandra's current visual seal.</p>
+</div>
+</div>
+</div>
+<!-- Museum Interactive Action Bar -->
+<div class="mt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md bg-surface-pure rounded-xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">folder_zip</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Download High-Resolution Archival Vault (.ZIP)</span>
+<span class="font-body-sm text-body-sm text-text-muted">Includes raw text exports, metadata dumps, and commemorative vector emblems (312 MB)</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Access Open Archives</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section: The 349 Dedicated Roll Call & Memorial Banner -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-xl w-full" id="the-349">
+<div class="bg-gradient-to-br from-surface-pure via-surface-container-low to-surface-pure rounded-2xl p-space-lg lg:p-space-xl shadow-lg relative overflow-hidden">
+<!-- Decorative Emblem Ambient Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accent-coral/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="text-center max-w-2xl mx-auto mb-space-lg relative z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+<span>Perpetual Roll of Honor</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          The 349: Guardians of the Clover
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Every participant who crossed the threshold of the capped guild is etched into this registry. Hover over any plaque entry to inspect their canonical legacy contribution.
+        </p>
+</div>
+<!-- Sample Member Matrix Strip (Previewing First Cohort) -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-space-sm relative z-10 mb-space-lg">
+<!-- Member 001 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#001</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">Vane_Archive</span>
+<span class="font-body-sm text-[11px] text-text-muted">Head Founder</span>
+</div>
+<!-- Member 002 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#002</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">KyotoNight</span>
+<span class="font-body-sm text-[11px] text-text-muted">KyoAni Specialist</span>
+</div>
+<!-- Member 003 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#003</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">Ren_The_Mecha</span>
+<span class="font-body-sm text-[11px] text-text-muted">Gundam Chronicler</span>
+</div>
+<!-- Member 004 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#004</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">SaberLover_S</span>
+<span class="font-body-sm text-[11px] text-text-muted">Type-Moon Curator</span>
+</div>
+<!-- Member 005 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#005</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">Zero_Requiem</span>
+<span class="font-body-sm text-[11px] text-text-muted">Script Analyst</span>
+</div>
+<!-- Member 006 -->
+<div class="bg-surface-pure p-space-sm rounded-lg shadow-sm flex flex-col items-center text-center group hover:bg-surface-container transition-colors cursor-pointer">
+<span class="font-code-sm text-code-sm font-bold text-accent-coral">#006</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface mt-1 truncate w-full">Mika_Sound</span>
+<span class="font-body-sm text-[11px] text-text-muted">OST Historian</span>
+</div>
+</div>
+<!-- Memorial Search & Expanded View CTA -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md relative z-10">
+<a class="inline-flex items-center gap-2 px-space-xl py-3 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-md hover:bg-on-secondary-container hover:-translate-y-0.5 transition-all" data-path="the-349" href="#">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>Browse Complete 349 Member Archive</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-xl py-3 rounded-full bg-surface-pure text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" data-path="memory-wall" href="#">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span>Sign The Living Memory Wall</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section: Bottom Commemorative Footer Invitation -->
+<section class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin pb-space-xl pt-space-md w-full">
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-accent-gold/20 text-accent-gold flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">auto_stories</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Have a CloverOtaku artifact to submit?</h4>
+<p class="font-body-sm text-body-sm text-text-muted">Our curatorial board accepts screenshots, meetup footage, and notes from all alumni.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md py-2 rounded-full bg-surface-pure text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-highest transition-colors">
+          Submit Archival Relic
+        </button>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-subtle pt-space-xl pb-space-lg"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col items-start pr-0 lg:pr-space-lg"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Cassandra Emblem" class="w-9 h-9 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VJkT5MJ4qr1ugNae2t_S8G4nJsOlbzcMZYJtoiTRMxS7LTjb39PzDC9ntjzSvX52RhJQ7lZqgzEO-ZDEn-insBFXQOLcxbS2bwrq8RelIHSOnvX-K5sJX8PPUe_l5k6sEVSS-BqMlDg7xvDM1DBN4Lg9gnMqYwMz9wA61EP0FNTiGrPL1uAGgZpehgCdj80KlxRw__9Su5r9XjcRtqkjT4aswIhR39tPkwIi6yQXFj33h4pAFQa9SAEZjKeL64lLiKuao0Qi_pTdM"/><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">CASSANDRA<span class="text-primary-container">.ID</span></span></div><p class="font-quote-editorial text-quote-editorial italic text-on-surface-variant mb-space-md">Community → Knowledge → Innovation</p><p class="font-body-sm text-body-sm text-text-muted leading-relaxed max-w-sm mb-space-md">An open scientific sanctuary bridging scholarly anime archiving, otaku subculture ontology, and collaborative computational innovation.</p><div class="flex items-center gap-2 text-accent-gold"><span class="material-symbols-outlined text-[16px]">star</span><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span><span class="material-symbols-outlined text-[16px]">star</span></div></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Ecosystem</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="home" href="#">Home</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="about" href="#">About</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="community" href="#">Community Forum</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Knowledge &amp; Lab</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="research" href="#">Research Hub</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="innovation" href="#">Innovation Lab</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-primary transition-colors" data-path="knowledge" href="#">Knowledge Base</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Heritage</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="cloverotaku-museum" href="#">CloverOtaku Museum</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="the-349" href="#">The 349</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-peach text-[14px]">arrow_forward</span><a class="text-text-muted hover:text-secondary transition-colors" data-path="memory-wall" href="#">Memory Wall</a></li></ul></div><div><h3 class="font-label-md text-label-md uppercase tracking-wider text-on-surface mb-space-md">Social &amp; Hubs</h3><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">forum</span><a class="text-text-muted hover:text-primary transition-colors" href="#">WhatsApp Group</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">groups</span><a class="text-text-muted hover:text-primary transition-colors" href="#">Discord Guild</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-gold text-[14px]">terminal</span><a class="text-text-muted hover:text-primary transition-colors" href="#">GitHub Commons</a></li></ul></div></div><div class="w-full flex items-center justify-center gap-space-md py-space-sm"><span class="h-[1px] flex-1 bg-accent-gold/40"></span><span class="material-symbols-outlined text-accent-gold text-[16px]">star_rate</span><span class="h-[1px] flex-1 bg-accent-gold/40"></span></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><p>© 2025 Cassandra.ID Foundation. All rights reserved. Archival preservation for anime &amp; subculture scholarship.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>System Status: Operational</span></div></div></div></footer></body></html>
