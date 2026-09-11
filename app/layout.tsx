@@ -8,23 +8,93 @@ const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-serif-source",
   subsets: ["latin"],
   weight: ["400", "600", "700"],
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono-jetbrains",
   subsets: ["latin"],
   weight: ["400", "500"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Cassandra.ID — Anime · Research · Innovation",
+  metadataBase: new URL("https://cassandra.id"),
+  title: {
+    default: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
+    template: "%s | Cassandra.ID",
+  },
   description: "Official portal and living archive documenting ideas, research papers, technology experiments, and community discussions born from our core community.",
+  keywords: [
+    "Cassandra.ID",
+    "Anime Research",
+    "Otaku Subculture",
+    "Komunitas Anime Indonesia",
+    "Innovation Lab",
+    "CloverOtaku.ID",
+    "AI Animation",
+    "Research Papers",
+  ],
+  authors: [{ name: "Cassandra.ID Team" }],
+  creator: "Cassandra.ID Community",
+  publisher: "Cassandra.ID",
+  icons: {
+    icon: [
+      { url: "/logo.png" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
+    description: "Where Anime Passion Meets Rigorous Research & Creative Innovation.",
+    url: "https://cassandra.id",
+    siteName: "Cassandra.ID",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "https://cassandra.id/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Cassandra.ID Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cassandra.ID — Portal Komunitas, Riset & Inovasi",
+    description: "Where Anime Passion Meets Rigorous Research & Creative Innovation.",
+    creator: "@CassandraID",
+    images: ["https://cassandra.id/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://cassandra.id",
+  },
 };
 
 export default function RootLayout({
@@ -32,15 +102,35 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Cassandra.ID",
+    url: "https://cassandra.id",
+    description: "Official portal and living archive documenting ideas, research papers, technology experiments, and community discussions.",
+    publisher: {
+      "@type": "Organization",
+      name: "Cassandra.ID Community",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://cassandra.id/logo.png",
+      },
+    },
+  };
+
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${jakarta.variable} ${sourceSerif.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
     >
       <head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-surface-pure text-on-surface font-body selection:bg-primary-container selection:text-white">

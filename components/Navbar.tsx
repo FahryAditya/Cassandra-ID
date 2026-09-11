@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import SearchModal from "./SearchModal";
@@ -27,9 +28,14 @@ export default function Navbar() {
           {/* Logo & Brand */}
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-primary-container p-0.5 shadow-[0_2px_8px_rgba(94,193,232,0.25)] transition-transform duration-200 group-hover:scale-105 flex items-center justify-center text-white font-bold text-lg">
-                🍁
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Cassandra.ID Logo"
+                width={40}
+                height={40}
+                priority
+                className="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(94,193,232,0.25)] ring-2 ring-primary-container/30 transition-transform duration-200 group-hover:scale-105"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight text-on-surface leading-none font-body">
                   CASSANDRA<span className="text-primary-container">.ID</span>

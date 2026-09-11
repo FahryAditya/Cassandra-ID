@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,9 +11,13 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="md:col-span-1 flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-primary-container flex items-center justify-center text-white font-bold text-lg shadow-sm">
-                🍁
-              </div>
+              <Image
+                src="/logo.png"
+                alt="Cassandra.ID Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover shadow-[0_2px_8px_rgba(94,193,232,0.25)] ring-2 ring-primary-container/30"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-bold tracking-tight text-on-surface leading-none">
                   CASSANDRA<span className="text-primary-container">.ID</span>
