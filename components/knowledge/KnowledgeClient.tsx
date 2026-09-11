@@ -112,6 +112,7 @@ export default function KnowledgeClient() {
               </button>
             </div>
           </motion.div>
+
         ))}
       </div>
     </div>

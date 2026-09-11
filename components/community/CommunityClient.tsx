@@ -81,7 +81,7 @@ export default function CommunityClient() {
         </div>
         <div className="flex flex-wrap items-center gap-4 shrink-0">
           <a
-            href="https://chat.whatsapp.com/HDxHiAw8MHw97WHNw1L8KZ"
+            href="https://chat.whatsapp.com/FI6uQdkxtJ7HhLoyoZnrTc"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-emerald-700 font-bold text-sm shadow-md hover:bg-slate-50 transition-transform active:scale-95"
