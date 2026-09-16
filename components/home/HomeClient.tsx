@@ -1,7 +1,19 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+
+interface Pillar {
+  title: string;
+  path: string;
+  icon: string;
+  desc: string;
+  color: string;
+  badge: string;
+  highlights: string[];
+  detailText: string;
+}
 
 const metrics = [
   { value: "01", label: "Active Community Hub", color: "text-primary-container" },
@@ -11,7 +23,7 @@ const metrics = [
   { value: "349+", label: "Heritage Members", color: "text-accent-gold" },
 ];
 
-const pillars = [
+const pillars: Pillar[] = [
   {
     title: "Research Hub",
     path: "/research",
@@ -19,6 +31,8 @@ const pillars = [
     desc: "Analytical frameworks, sociolinguistic studies of otaku subculture, and computational narrative models.",
     color: "from-sky-500/10 to-blue-500/5",
     badge: "28 Papers",
+    highlights: ["Sosiolinguistik Otaku", "Komputasi Naratif", "Metodologi Riset"],
+    detailText: "Divisi riset independen yang menerbitkan paper analisis kualitatif dan kuantitatif mengenai fenomena otaku global & lokal.",
   },
   {
     title: "Innovation Lab",
@@ -27,6 +41,8 @@ const pillars = [
     desc: "Active open-source tools, machine learning experiments, and web applications built by community members.",
     color: "from-orange-500/10 to-amber-500/5",
     badge: "16 Projects",
+    highlights: ["Bot Open-Source", "Pipeline Dataset", "AI Generatif App"],
+    detailText: "Laboratorium eksperimentasi teknologi tempat anggota komunitas berkolaborasi merancang bot, web app, dan tools.",
   },
   {
     title: "Knowledge Base",
@@ -35,6 +51,8 @@ const pillars = [
     desc: "Distilled discussion archives, analytical guides, and permanent references extracted from real-time group chats.",
     color: "from-emerald-500/10 to-teal-500/5",
     badge: "142+ Guides",
+    highlights: ["Rangkuman WA", "Panduan Sinematografi", "Glosarium Subkultur"],
+    detailText: "Pusat dokumentasi terstruktur yang mengubah diskusi harian grup WhatsApp menjadi artikel panduan permanen.",
   },
   {
     title: "Clover Archive 🍀",
@@ -43,8 +61,113 @@ const pillars = [
     desc: "Preserving the 5-year heritage, golden era milestones, and memory wall of the predecessor CloverOtaku.ID.",
     color: "from-red-500/10 to-rose-500/5",
     badge: "349 Members",
+    highlights: ["Timeline 2021-2026", "Galeri Memori", "Warisan Komunitas"],
+    detailText: "Museum digital yang memelihara sejarah 5 tahun perjalanan CloverOtaku.ID, merayakan kontribusi 349+ anggota pendahulu.",
   },
 ];
+
+function PillarFlipCard({ p }: { p: Pillar }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  return (
+    <div
+      className="group h-[320px] w-full [perspective:1000px] cursor-pointer"
+      onClick={() => setIsFlipped((prev) => !prev)}
+    >
+      <motion.div
+        className="relative w-full h-full rounded-2xl transition-all duration-500 [transform-style:preserve-3d]"
+        animate={{ rotateY: isFlipped ? 180 : 0 }}
+        transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
+      >
+        {/* FRONT SIDE */}
+        <div className="absolute inset-0 w-full h-full p-6 bg-white rounded-2xl border border-border-subtle/70 flex flex-col justify-between shadow-xs group-hover:shadow-xl transition-shadow [backface-visibility:hidden]">
+          <div>
+            <div className="flex items-center justify-between mb-5">
+              <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${p.color} border border-border-subtle flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-200`}>
+                <span className="material-symbols-outlined text-[24px]">{p.icon}</span>
+              </div>
+              <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-surface-subtle text-text-muted border border-border-subtle">
+                {p.badge}
+              </span>
+            </div>
+            <h3 className="text-xl font-bold text-on-surface group-hover:text-primary transition-colors mb-2 font-serif">
+              {p.title}
+            </h3>
+            <p className="text-xs text-text-muted leading-relaxed">
+              {p.desc}
+            </p>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-border-subtle/40 flex items-center justify-between text-xs font-bold text-primary">
+            <span className="inline-flex items-center gap-1.5 text-text-muted group-hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-[16px]">sync</span>
+              <span>Klik untuk Detil</span>
+            </span>
+            <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
+              arrow_forward
+            </span>
+          </div>
+        </div>
+
+        {/* BACK SIDE */}
+        <div className={`absolute inset-0 w-full h-full p-6 rounded-2xl border border-border-subtle/80 bg-gradient-to-br ${p.color} bg-white flex flex-col justify-between shadow-lg [backface-visibility:hidden] [transform:rotateY(180deg)]`}>
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-[10px] uppercase font-extrabold tracking-widest text-primary flex items-center gap-1">
+                <span className="material-symbols-outlined text-[14px]">info</span>
+                Ringkasan Divisi
+              </span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsFlipped(false);
+                }}
+                className="p-1 rounded-full hover:bg-black/5 text-text-muted hover:text-on-surface transition-colors"
+                title="Tutup Card"
+              >
+                <span className="material-symbols-outlined text-[18px]">undo</span>
+              </button>
+            </div>
+
+            <h4 className="text-lg font-bold text-on-surface font-serif mb-1.5">{p.title}</h4>
+            <p className="text-[11px] text-text-muted leading-relaxed mb-4">{p.detailText}</p>
+
+            <div className="space-y-1.5">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-text-muted block">Fokus Utama:</span>
+              <div className="flex flex-wrap gap-1.5">
+                {p.highlights.map((h, i) => (
+                  <span
+                    key={i}
+                    className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-white/80 text-on-surface border border-border-subtle/60"
+                  >
+                    ✦ {h}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-border-subtle/40 flex items-center justify-between gap-2">
+            <span className="text-[11px] font-medium text-text-muted flex items-center gap-1">
+              <span className="material-symbols-outlined text-[14px]">flip</span>
+              <span>Klik kartu untuk balik</span>
+            </span>
+
+            <Link
+              href={p.path}
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary-container text-white text-xs font-bold shadow-xs hover:bg-[#4AB3DC] transition-all"
+            >
+              <span>Buka Halaman</span>
+              <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </Link>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
 
 export default function HomeClient() {
   return (
@@ -171,7 +294,7 @@ export default function HomeClient() {
             </h2>
           </div>
           <p className="text-sm text-text-muted max-w-md">
-            Explore our curated divisions balancing computational models, sociological deconstruction, curated transcripts, and shared otaku history.
+            Klik kartu di bawah untuk membalikkan kartu dan melihat ringkasan divisi & fokus utama.
           </p>
         </div>
 
@@ -180,34 +303,11 @@ export default function HomeClient() {
           {pillars.map((p, idx) => (
             <motion.div
               key={idx}
-              whileHover={{ y: -6 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
             >
-              <Link
-                href={p.path}
-                className="group flex flex-col justify-between h-full p-6 bg-white rounded-2xl border border-border-subtle/70 shadow-xs hover:shadow-xl transition-all duration-200"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${p.color} border border-border-subtle flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-200`}>
-                      <span className="material-symbols-outlined text-[24px]">{p.icon}</span>
-                    </div>
-                    <span className="text-[11px] font-bold px-2.5 py-1 rounded-full bg-surface-subtle text-text-muted border border-border-subtle">
-                      {p.badge}
-                    </span>
-                  </div>
-                  <h3 className="text-xl font-bold text-on-surface group-hover:text-primary transition-colors mb-2 font-serif">
-                    {p.title}
-                  </h3>
-                  <p className="text-xs text-text-muted leading-relaxed">
-                    {p.desc}
-                  </p>
-                </div>
-                <div className="mt-8 pt-4 border-t border-border-subtle/40 flex items-center text-xs font-bold text-primary group-hover:translate-x-1 transition-transform">
-                  <span>Explore Division</span>
-                  <span className="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
-                </div>
-              </Link>
+              <PillarFlipCard p={p} />
             </motion.div>
           ))}
         </div>
