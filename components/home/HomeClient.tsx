@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface Pillar {
@@ -266,6 +267,25 @@ export default function HomeClient() {
                 </div>
               ))}
             </div>
+          </motion.div>
+
+          {/* Hero Wallpaper / Banner Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-full mt-10 rounded-2xl sm:rounded-3xl overflow-hidden border border-border-subtle/80 shadow-xl bg-surface-subtle relative group"
+          >
+            <Image
+              src="/wallpaper.webp"
+              alt="Cassandra.ID Fandom & Research Wallpaper"
+              width={1280}
+              height={720}
+              priority
+              quality={85}
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="w-full h-auto max-h-[520px] object-cover transition-transform duration-700 group-hover:scale-[1.015]"
+            />
           </motion.div>
         </div>
       </div>

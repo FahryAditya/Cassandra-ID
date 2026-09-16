@@ -35,8 +35,9 @@ const coreValues = [
 
 export default function AboutClient() {
   return (
+    <>
     <div className="max-w-[1440px] mx-auto px-4 sm:px-8 py-12">
-      {/* Header */}
+      
       <div className="max-w-3xl mx-auto text-center mb-16">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -157,5 +158,6 @@ export default function AboutClient() {
         </div>
       </div>
     </div>
+    </>
   );
 }
