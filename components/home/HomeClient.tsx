@@ -178,115 +178,113 @@ export default function HomeClient() {
       <div className="absolute top-36 -left-32 w-80 h-80 bg-accent-peach/20 blur-3xl pointer-events-none -z-10 rounded-full" />
       <div className="absolute top-44 -right-32 w-80 h-80 bg-primary-container/15 blur-3xl pointer-events-none -z-10 rounded-full" />
 
-      {/* Hero Content Section */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 pt-12 pb-16">
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-subtle border border-border-subtle shadow-xs mb-6"
-          >
-            <span className="text-accent-gold text-sm font-bold">✦</span>
-            <span className="text-xs font-semibold uppercase tracking-wider text-on-surface-variant">
-              Anime Community <span className="text-accent-gold">·</span> Research <span className="text-accent-gold">·</span> Innovation
-            </span>
-            <span className="text-accent-gold text-sm font-bold">✦</span>
-          </motion.div>
-
-          {/* Main Title */}
-          <motion.h1
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-7xl font-extrabold text-on-surface tracking-tight leading-tight mb-4 font-serif"
-          >
-            CASSANDRA<span className="text-primary-container">.ID</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl sm:text-2xl text-primary font-normal mb-6 max-w-2xl font-serif"
-          >
-            Where Anime Passion Meets Rigorous Research & Creative Innovation
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base sm:text-lg text-text-muted leading-relaxed max-w-2xl mb-10"
-          >
-            Not an ordinary anime fandom. Cassandra.ID is the official portal and living archive documenting ideas, research papers, technology experiments, and community discussions born from our core community.
-          </motion.p>
-
-          {/* Dual CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center gap-4 w-full mb-14"
-          >
-            <a
-              href="https://chat.whatsapp.com/FI6uQdkxtJ7HhLoyoZnrTc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 h-12 px-7 rounded-full bg-primary-container text-white font-semibold text-sm shadow-md hover:bg-[#4AB3DC] hover:-translate-y-0.5 transition-all duration-150"
-            >
-              <span className="material-symbols-outlined text-[20px]">chat</span>
-              <span>Join Community (WhatsApp)</span>
-            </a>
-            <Link
-              href="/research"
-              className="inline-flex items-center justify-center gap-2.5 h-12 px-7 rounded-full bg-surface-container-low text-primary font-semibold text-sm hover:bg-surface-container transition-all duration-150 shadow-xs border border-border-subtle/50"
-            >
-              <span className="material-symbols-outlined text-[20px]">biotech</span>
-              <span>Explore Research & Lab</span>
-            </Link>
-          </motion.div>
-
-          {/* Metric Counter Bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="w-full bg-surface-subtle/90 backdrop-blur-md rounded-2xl p-6 border border-border-subtle/60 shadow-sm"
-          >
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-border-subtle/40">
-              {metrics.map((m, idx) => (
-                <div key={idx} className="flex flex-col items-center justify-center px-2 pt-2 sm:pt-0">
-                  <span className={`text-4xl font-extrabold tracking-tight ${m.color}`}>
-                    {m.value}
-                  </span>
-                  <span className="text-xs text-text-muted uppercase tracking-wider font-semibold mt-1 text-center">
-                    {m.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Hero Wallpaper / Banner Image */}
-          <motion.div
-            initial={{ opacity: 0, y: 20, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="w-full mt-10 rounded-2xl sm:rounded-3xl overflow-hidden border border-border-subtle/80 shadow-xl bg-surface-subtle relative group"
-          >
+      {/* Hero Section with Wallpaper Background */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 pt-6 pb-12">
+        <div className="relative w-full rounded-3xl overflow-hidden border border-border-subtle/80 shadow-2xl">
+          {/* Background Wallpaper Image */}
+          <div className="absolute inset-0 -z-10">
             <Image
               src="/wallpaper.webp"
               alt="Cassandra.ID Fandom & Research Wallpaper"
-              width={1280}
-              height={720}
+              fill
               priority
-              quality={85}
-              sizes="(max-width: 1280px) 100vw, 1280px"
-              className="w-full h-auto max-h-[520px] object-cover transition-transform duration-700 group-hover:scale-[1.015]"
+              quality={90}
+              sizes="(max-width: 1440px) 100vw, 1440px"
+              className="object-cover object-center brightness-[0.4] scale-105"
             />
-          </motion.div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-slate-950/30 backdrop-blur-[1px]" />
+          </div>
+
+          {/* Hero Content Overlay */}
+          <div className="relative z-10 max-w-4xl mx-auto px-6 py-14 sm:py-20 flex flex-col items-center text-center text-white">
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md mb-6"
+            >
+              <span className="text-amber-300 text-sm font-bold">✦</span>
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-100">
+                Anime Community <span className="text-amber-300">·</span> Research <span className="text-amber-300">·</span> Innovation
+              </span>
+              <span className="text-amber-300 text-sm font-bold">✦</span>
+            </motion.div>
+
+            {/* Main Title */}
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-5xl sm:text-7xl font-extrabold text-white tracking-tight leading-tight mb-4 font-serif drop-shadow-md"
+            >
+              CASSANDRA<span className="text-sky-400">.ID</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl sm:text-2xl text-sky-200 font-normal mb-6 max-w-2xl font-serif drop-shadow-sm"
+            >
+              Where Anime Passion Meets Rigorous Research & Creative Innovation
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl mb-10 drop-shadow-sm"
+            >
+              Not an ordinary anime fandom. Cassandra.ID is the official portal and living archive documenting ideas, research papers, technology experiments, and community discussions born from our core community.
+            </motion.p>
+
+            {/* Dual CTAs */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-wrap items-center justify-center gap-4 w-full mb-12"
+            >
+              <a
+                href="https://chat.whatsapp.com/FI6uQdkxtJ7HhLoyoZnrTc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2.5 h-12 px-7 rounded-full bg-primary-container text-white font-semibold text-sm shadow-lg hover:bg-[#4AB3DC] hover:-translate-y-0.5 transition-all duration-150"
+              >
+                <span className="material-symbols-outlined text-[20px]">chat</span>
+                <span>Join Community (WhatsApp)</span>
+              </a>
+              <Link
+                href="/research"
+                className="inline-flex items-center justify-center gap-2.5 h-12 px-7 rounded-full bg-white/15 backdrop-blur-md text-white font-semibold text-sm hover:bg-white/25 transition-all duration-150 shadow-md border border-white/25"
+              >
+                <span className="material-symbols-outlined text-[20px]">biotech</span>
+                <span>Explore Research & Lab</span>
+              </Link>
+            </motion.div>
+
+            {/* Metric Counter Bar (Glassmorphic Overlay) */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="w-full bg-slate-900/70 backdrop-blur-xl rounded-2xl p-6 border border-white/15 shadow-2xl"
+            >
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+                {metrics.map((m, idx) => (
+                  <div key={idx} className="flex flex-col items-center justify-center px-2 pt-2 sm:pt-0">
+                    <span className="text-4xl font-extrabold tracking-tight text-amber-300 drop-shadow-sm">
+                      {m.value}
+                    </span>
+                    <span className="text-xs text-slate-200 uppercase tracking-wider font-semibold mt-1 text-center">
+                      {m.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
