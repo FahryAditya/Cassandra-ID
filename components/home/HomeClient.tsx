@@ -180,9 +180,9 @@ export default function HomeClient() {
 
       {/* Hero Section with Wallpaper Background */}
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 pt-6 pb-12">
-        <div className="relative w-full rounded-3xl overflow-hidden border border-border-subtle/80 shadow-2xl">
+        <div className="relative isolate w-full rounded-3xl overflow-hidden border border-border-subtle/80 shadow-2xl bg-slate-900">
           {/* Background Wallpaper Image */}
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 z-0">
             <Image
               src="/wallpaper.webp"
               alt="Cassandra.ID Fandom & Research Wallpaper"
@@ -190,7 +190,7 @@ export default function HomeClient() {
               priority
               quality={90}
               sizes="(max-width: 1440px) 100vw, 1440px"
-              className="object-cover object-center brightness-[0.4] scale-105"
+              className="object-cover object-center brightness-[0.55] scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-slate-950/30 backdrop-blur-[1px]" />
           </div>
